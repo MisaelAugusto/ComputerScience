@@ -34,4 +34,4 @@
 </ul>
 
 ---
-<p>Desenvolvido com 💙️ by Misael Augusto</p>
+<p>Desenvolvido com 💙️ por Misael Augusto</p>
