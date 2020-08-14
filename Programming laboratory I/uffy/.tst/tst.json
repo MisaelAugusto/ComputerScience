@@ -1,0 +1,19 @@
+{
+  "files": {
+    "seleciona_div.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Seleciona Divisores em uma Lista\n\ndef filtra_divisores(lista):\n\tfor i in range(len(lista) - 1, -1, -1):\n\t\tsomatorio = 0\n\t\tnumero = str(lista[i])\n\t\tfor digito in numero:\n\t\t\tsomatorio += int(digito)\n\t\tif lista[i] % somatorio > 0:\n\t\t\tlista.pop(i)\n",
+      "name": "seleciona_div.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_divisores = getattr(undertest, 'filtra_divisores', None)\n\nclass PublicTests(unittest.TestCase):\n\n\n   def test_exemplo(self):\n       lista1 = [333, 121, 81]\n       assert filtra_divisores(lista1) == None\n       assert lista1 == [333,81]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "92eb5d8c36abd3013c0bdd4215360494",
+  "iid": 5035687271202816,
+  "activity_revision": "1.0.0"
+}

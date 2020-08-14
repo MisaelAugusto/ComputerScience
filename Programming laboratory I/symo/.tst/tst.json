@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 165.67,\n      \"header\": 1\n    }\n  ]\n}"
+    },
+    "ap_rp.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Aprovados e Reprovados\n\nN = int(raw_input())\n\naprovados = 0\nreprovados = 0\naprovados_media = 0\nreprovados_media = 0\nfor i in range(N):\n\tmedia = float(raw_input())\n\tif media >= 7.0:\n\t\taprovados += 1\n\t\taprovados_media += media \n\telse:\n\t\treprovados += 1\n\t\treprovados_media += media\nprint \"Reprovados: %d\" % reprovados\n\nif reprovados > 0:\t\n\tprint \"M\u00e9dia: %.1f\" % (reprovados_media / reprovados)\n\nprint \"\"\nprint \"Aprovados: %d\" % aprovados\n\nif aprovados > 0:\n\tprint \"M\u00e9dia: %.1f\" % (aprovados_media / aprovados)\n",
+      "name": "ap_rp.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "099b20c96a476ef7641dd251cc6a9e3e",
+  "iid": 5252838871531520,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "19 4\n",
+      "output": "19 - 4 = 15\n15 - 4 = 11\n11 - 4 = 7\n7 - 4 = 3\n3 - 4 < 0\n===\nquociente = 4\nresto = 3\n"
+    },
+    {
+      "category": "public",
+      "input": "10 3\n",
+      "type": "io",
+      "output": "10 - 3 = 7\n7 - 3 = 4\n4 - 3 = 1\n1 - 3 < 0\n===\nquociente = 3\nresto = 1\n"
+    }
+  ]
+}

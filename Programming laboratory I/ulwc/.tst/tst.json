@@ -1,0 +1,18 @@
+{
+  "files": {
+    "ocorrencia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Mais ocorr\u00eancias de um Caractere\n\npalavras = []\nwhile True:\n\tpalavra = raw_input()\n\tif palavra == \"fim\":\n\t\tbreak\n\tpalavras.append(palavra)\n\nc = raw_input()\nN = int(raw_input())\t\n\npalavras_especiais = []\nfor p in palavras:\n\tfrequencia = 0\n\tfor letra in p:\n\t\tif letra == c:\n\t\t\tfrequencia += 1\n\tif frequencia > N:\n\t\tpalavras_especiais.append(p)\nif len(palavras_especiais) > 0:\n\tfor palavra in palavras_especiais:\n\t\tprint palavra\nelse:\n\tprint \"Nenhuma palavra encontrada.\"\n",
+      "name": "ocorrencia.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 20,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "40e2cf1567e11fbb7f0d8d5af03e2632",
+  "iid": 4962098039750656,
+  "activity_revision": "1.0.2"
+}

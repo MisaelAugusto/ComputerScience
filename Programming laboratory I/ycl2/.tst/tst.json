@@ -1,0 +1,18 @@
+{
+  "files": {
+    "13.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Depois do 13 Nada\n\nnum1 = int(raw_input())\nnum2 = int(raw_input())\nnum3 = int(raw_input())\n\nif num1 == 13:\n\tprint \"0\"\nelif num2 == 13:\n\tprint num1\nelif num3 == 13:\n\tif num1 + num2 == 13:\n\t\tprint \"0\"\n\telse:\n\t\tprint num1 + num2\nelse:\n\tprint num1 + num2 + num3\n\t\n",
+      "name": "13.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 107.55,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f681d50910834f265dfed5b7f279109b",
+  "iid": 4826291844939776,
+  "activity_revision": "1.1.3"
+}

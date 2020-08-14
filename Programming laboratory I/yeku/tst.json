@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4\n9.27\n",
+      "output": "Unidade? Média de aprovação na unidade? \nO aluno vai para a unidade 5 com média 9.3.\n"
+    }
+  ]
+}

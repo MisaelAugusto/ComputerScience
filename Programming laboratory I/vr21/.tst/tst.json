@@ -1,0 +1,18 @@
+{
+  "files": {
+    "imprime.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Imprime primeira Vogal\n\npalavra = raw_input()\nvogais = [\"a\", \"e\", \"i\", \"o\", \"u\", \"A\", \"E\", \"I\", \"O\", \"U\"]\nfor letra in palavra:\n\tif letra in vogais:\n\t\tconsoante = False\n\t\tprint letra\n\t\tbreak\n\telse:\n\t\tconsoante = True\nif consoante:\n\tprint \"-\"\t\n",
+      "name": "imprime.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 4.75,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0029d8b17a7243959de81bef08d35ae3",
+  "iid": 5714287339241472,
+  "activity_revision": "1.1.3"
+}

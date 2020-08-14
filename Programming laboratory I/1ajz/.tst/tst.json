@@ -1,0 +1,14 @@
+{
+  "files": {
+    "area_circulo.py": {
+      "category": "answer",
+      "data": "import math\nr = float(input())\narea = math.pi * r **2\nprint \"%.2f\" %area\n",
+      "name": "area_circulo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8d760e6e420952d3404be59b64699778",
+  "iid": 4619988996456448,
+  "activity_revision": "1.1.0"
+}

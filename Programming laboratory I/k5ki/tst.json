@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "5\n2\n3\n",
+      "output": "plof\n"
+    },
+    {
+      "category": "public",
+      "input": "4\n4\n4\n",
+      "output": "plif\n"
+    }
+  ]
+}

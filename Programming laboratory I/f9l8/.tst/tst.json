@@ -1,0 +1,18 @@
+{
+  "files": {
+    "custo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Custo Empregado\n\nsalario_base = float(raw_input())\ndias_trabalhados = int(raw_input())\ntransporte_diario = float(raw_input())\ncusto_transporte = dias_trabalhados * transporte_diario\n\nif salario_base <= 1317.07:\n\tINSS = 0.08 * salario_base\nelif 1317.08 <= salario_base <= 2195.12:\n\tINSS = 0.09 * salario_base\nelse:\n\tINSS = 0.11 * salario_base\n\nif custo_transporte > (0.06 * salario_base):\n\ttransporte_empregado = 0.06 * salario_base\n\ttransporte_empregador = custo_transporte - (0.06 * salario_base)\nelse:\n\ttransporte_empregador = 0\n\ttransporte_empregado = 0\n\ncusto_empregador = (salario_base * 0.20) + transporte_empregador + salario_base\ncusto_empregado = INSS + transporte_empregado\n\nprint \"O sal\u00e1rio base \u00e9 R$ %.2f\" % salario_base\nprint \"O custo mensal para o empregador \u00e9 de R$ %.2f\" % custo_empregador\nprint \"O sal\u00e1rio l\u00edquido que o trabalhador ir\u00e1 receber no m\u00eas \u00e9 R$ %.2f\" % (salario_base - custo_empregado)\n\n\n\n\n",
+      "name": "custo.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 20,\n      \"vhalstead\": 351.03,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "181be7f6cfe378356feb99de8506b5d5",
+  "iid": 5792547817390080,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "1994\n1996\n68.93\n109.41\n112.90\n",
+      "output": "1 ano(s) abaixo (33% dos anos)\nmédia dos anos abaixo: U$ 68.93\n2 ano(s) acima (67% dos anos)\nmédia dos anos acima: U$ 111.16\n"
+    }
+  ]
+}

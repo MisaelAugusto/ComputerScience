@@ -1,0 +1,18 @@
+{
+  "files": {
+    "investimento.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Fundo de Investimento\n\nsaldo = 0\nn = 0\nwhile True:\n\tvalor = float(raw_input())\n\tsaldo += valor\n\tn += 1\n\tmedia = saldo / n\n\tif valor < media:\n\t\tsaldo -= valor\n\t\tmedia = saldo / (n - 1)\n\t\tbreak\n\t\nprint \"Saldo total do FIS: R$%.2f.\" % saldo\nprint \"M\u00e9dia das contribui\u00e7\u00f5es: R$%.2f.\" % media\n",
+      "name": "investimento.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 62.27,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5a9f2b8cdf47558605195b805471f504",
+  "iid": 6425809740890112,
+  "activity_revision": "1.0.1"
+}

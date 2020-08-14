@@ -1,0 +1,18 @@
+{
+  "files": {
+    "mastery.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# ALuno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Mastery Learning\n\nprint \"Mastery Learning\"\nprint \"C\u00e1lculo da nota na unidade\"\nprint \"\"\n\nnotas = []\npenalizacao = 0.0\nmedias = []\nwhile True:\n\tnotas.append(float(raw_input(\"Nota? \")))\n\tif len(notas) < 2:\n\t\tcontinue\n\telse:\n\t\tmenor = 0\n\t\tpenalizacao += ((len(notas) - 2) * 0.5)\n\t\twhile len(notas) > 2:\n\t\t\tmenor = 100\n\t\t\tfor i in range(len(notas)):\n\t\t\t\tif notas[i] < menor:\n\t\t\t\t\tmenor = notas[i]\n\t\t\t\t\tindice = i\n\t\t\tnotas.pop(indice)\n\t\tmedia = (notas[0] + notas[1]) / 2\n\t\tmedias.append(media)\n\t\tif media < 6:\n\t\t\tprint \"M\u00e9dia: %.1f (cursando)\" % media\n\t\t\tprint \"Penaliza\u00e7\u00e3o: %.1f\" % penalizacao\n\t\t\tprint \"\"\n\t\telse:\n\t\t\tprint \"M\u00e9dia: %.1f (aprovado)\" % media\n\t\t\tprint \"Penaliza\u00e7\u00e3o: %.1f\" % penalizacao\n\t\t\tprint \"\"\n\t\t\tbreak\t\t\n\ntotal_medias = 0\nfor media in medias:\n\ttotal_medias += media\n\nprint \"===\"\nif notas[0] >= notas[1]:\n\tprint \"Notas v\u00e1lidas: %.1f e %.1f\" % (notas[0], notas[1])\nelse:\n\tprint \"Notas v\u00e1lidas: %.1f e %.1f\" % (notas[1], notas[0])\n\nprint \"M\u00e9dia parcial na unidade: %.1f\" % media\nprint \"Penaliza\u00e7\u00f5es: %.1f\" % penalizacao\nprint \"M\u00e9dia final na unidade: %.1f\" % (total_medias / len(medias))\n",
+      "name": "mastery.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 30,\n      \"vhalstead\": 267.35,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "636b894f925b4e2729dda266f7fd8df8",
+  "iid": 4994690399076352,
+  "activity_revision": "1.0.3"
+}

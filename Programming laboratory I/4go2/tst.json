@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "100.0\n20.0\n22.5\n",
+      "output": "Posição final do móvel\nS(22.5) = 550.0 m\n"
+    }
+  ]
+}

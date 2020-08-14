@@ -1,0 +1,18 @@
+{
+  "files": {
+    "consoantes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Iniciadas por consoantes\n\nN = int(raw_input())\n\nconsoantes = [\"b\", \"c\", \"d\", \"f\", \"g\", \"h\", \"j\", \"k\", \"l\", \"m\", \"n\", \"p\", \"q\", \"r\", \"s\", \"t\", \"v\", \"w\", \"x\", \"y\", \"z\"]\niniciadas_consoantes = 0\nfor i in range(N):\n\tpalavra = raw_input()\n\tif palavra[0] in consoantes:\n\t\tiniciadas_consoantes += 1\n\t\t\nporcentagem = iniciadas_consoantes * 100.0 / N\nprint \"total de palavras: %d\" % N\nprint \"iniciadas por consoantes: %d (%.2f%%)\" % (iniciadas_consoantes, porcentagem)\n",
+      "name": "consoantes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 70.32,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a21e45f3c753de62401d8fef0c4ea929",
+  "iid": 6126229463760896,
+  "activity_revision": "1.1.3"
+}

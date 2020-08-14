@@ -1,0 +1,18 @@
+{
+  "files": {
+    "lucro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Lucro Mensal de uma Empresa\n\nmeses = [\"jan\", \"fev\", \"mar\", \"abr\", \"mai\", \"jun\", \"jul\", \"ago\", \"set\", \"out\", \"nov\", \"dez\"]\nlucros = []\n\nfor i in range(12):\n\tvalores = raw_input().split()\n\tlucro = float(valores[0]) - float(valores[1])\n\tlucros.append(lucro)\nfor i in range(12):\n\tif lucros[i] >= 0:\n\t\tprint \"%s  %.1f\" % (meses[i], lucros[i])\n\telse:\n\t\tprint \"%s %.1f\" % (meses[i], lucros[i])\n",
+      "name": "lucro.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b705e1b8376a5b171f82fb3cdcd71fbc",
+  "iid": 5548611660152832,
+  "activity_revision": "1.1.1"
+}

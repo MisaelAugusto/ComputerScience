@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "12345\n76400\n10\n",
+      "type": "io",
+      "name": "test_name",
+      "output": "03-05-10\n"
+    }
+  ]
+}

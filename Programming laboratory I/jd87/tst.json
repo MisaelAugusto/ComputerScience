@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "9\n3\n20\n18\n15\n",
+      "output": "1 (33.3%)\n"
+    }
+  ]
+}

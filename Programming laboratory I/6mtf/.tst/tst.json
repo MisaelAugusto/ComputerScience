@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nminmax_sort = getattr(undertest, 'minmax_sort', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert  minmax_sort([7, 4, 8, 1, 2, 3]) == [[1, 4, 3, 7, 2, 8], [1, 2, 3, 4, 7, 8], [1, 2, 3, 4, 7, 8]]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "selection.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: MinMax Sort = Selection Sort Duplicado\n\ndef minmax_sort(lista):\n\tlista_final = []\n\tif len(lista) > 0:\t\n\t\tn = 0\n\t\timin = 0\n\t\timax = 0\n\t\twhile n < len(lista) / 2:\n\t\t\tfor i in range(n, len(lista) - n):\n\t\t\t\tif lista[i] < lista[imin]:\n\t\t\t\t\timin = i\n\t\t\t\tif lista[i] > lista[imax]:\n\t\t\t\t\timax = i\n\n\t\t\tlista[imin], lista[n] = lista[n], lista[imin]\n\t\t\tlista[imax], lista[len(lista) - 1 - n] = lista[len(lista) - 1 - n], lista[imax]\n\t\t\tlista2 = []\n\t\t\t\n\t\t\tfor j in range(len(lista)):\n\t\t\t\tlista2.append(lista[j])\n\t\t\t\n\t\t\tlista_final.append(lista2)\n\t\t\t\n\t\t\tn += 1\n\t\t\n\treturn lista_final\t\n\nprint minmax_sort([7, 4, 8, 1, 2, 3])\n\t\t\t\n",
+      "name": "selection.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fed75a565d52d1287616d1828d0ed546",
+  "iid": 5815334967705600,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "serie.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: S\u00e9rie (\u00edmpare 1)\n\nfor i in range(1, 102, 2):\n\tif (i % 3 == 0) or (i % 5 == 0):\n\t\ti = \"*\"\n\tprint i \n\t\t\n",
+      "name": "serie.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 51.89,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2f6e071a91e6ed1ecd1c2f695f1cb6fe",
+  "iid": 6063508445724672,
+  "activity_revision": "1.1.1"
+}

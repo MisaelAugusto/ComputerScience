@@ -1,0 +1,18 @@
+{
+  "files": {
+    "divisores.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Divisores Pr\u00f3prios\n\nnumero = int(raw_input())\n\nfor i in range(1, numero):\n\tif numero % i == 0:\n\t\tprint i\n",
+      "name": "divisores.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4fcec6d394e9d31dadee2f08d5f459d2",
+  "iid": 5855508682506240,
+  "activity_revision": "1.1.0"
+}

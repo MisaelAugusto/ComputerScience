@@ -1,0 +1,18 @@
+{
+  "files": {
+    "tabela.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Tabela de Quadrados\n\nX = int(raw_input())\nY = int(raw_input())\n\nif X > Y:\n\tprint \"---\"\nelse:\n\tfor i in range(X, Y + 1):\n\t\tprint i, i**2\n",
+      "name": "tabela.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "272ca926922e41e60cc4e764a4250753",
+  "iid": 5812877508214784,
+  "activity_revision": "1.0.1"
+}

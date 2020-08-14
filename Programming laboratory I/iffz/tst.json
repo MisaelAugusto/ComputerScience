@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4\n18.0 24.0 30.0\n15.4 34.2 33.8\n17.7 12.2 14.7\n17.7 14.9 15.3\n",
+      "output": "Área 1: 216.00\nÁrea 2: 254.91\nÁrea 3: 88.74\nÁrea 4: 108.25\nNúmero maiores: 3, área média: 193.05\n"
+    }
+  ]
+}

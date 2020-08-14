@@ -1,0 +1,18 @@
+{
+  "files": {
+    "premiacao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Premia\u00e7\u00e3o Cliente\n\ncontadores = [0, 0, 0, 0]\ninicia = True\nwhile True:\n\tentrada = raw_input().split()\n\tif entrada[0] == \"fim\":\n\t\tbreak\n\tif entrada[0] == \"joao\":\n\t\tcontadores[0] += 1\n\t\tcontadores[1] += float(entrada[1])\n\t\tif contadores[0] >= 3:\n\t\t\tprint \"joao foi o vencedor. Comprou mais de duas vezes no per\u00edodo.\"\n\t\t\tinicia = False\n\t\t\tbreak\n\t\tif contadores[1] > 2000:\n\t\t\tprint \"joao foi o vencedor. Comprou mais R$ 2000.00 no per\u00edodo.\"\n\t\t\tinicia = False\n\t\t\tbreak\n\telse:\n\t\tcontadores[2] += 1\n\t\tcontadores[3] += float(entrada[1])\n\t\tif contadores[2] >= 3:\n\t\t\tprint \"julio foi o vencedor. Comprou mais de duas vezes no per\u00edodo.\"\n\t\t\tinicia = False\n\t\t\tbreak\n\t\tif contadores[3] > 2000:\n\t\t\tprint \"julio foi o vencedor. Comprou mais R$ 2000.00 no per\u00edodo.\"\n\t\t\tinicia = False\n\t\t\tbreak\n\t\t\nif inicia:\n\tprint \"N\u00e3o houve vencedor.\"\n",
+      "name": "premiacao.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 10,\n      \"pep8\": 1,\n      \"lloc\": 31,\n      \"vhalstead\": 155.59,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "68efbacff4c3876ba5035e7691faf75a",
+  "iid": 4811489105936384,
+  "activity_revision": "1.1.2"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "misael.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Ciclo Trigonom\u00e9trico\n\nangulo = float(raw_input())\nwhile angulo > 360:\n\tangulo = angulo - 360\n\nangulo = angulo / 90\n\nif 0 < angulo < 1:\n\tprint \"Quadrante 1\"\nelif 1 < angulo < 2:\n\tprint \"Quadrante 2\"\nelif 2 < angulo < 3:\n\tprint \"Quadrante 3\"\nelif 3 < angulo < 4:\n\tprint \"Quadrante 4\"\nelse:\n\tprint \"Sobre eixos\"\n\t\n",
+      "name": "misael.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 165.67,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "76be8adcfa9ca11a2ec310cdba3885eb",
+  "iid": 6381192848867328,
+  "activity_revision": "1.0.1"
+}

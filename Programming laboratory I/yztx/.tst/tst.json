@@ -1,0 +1,14 @@
+{
+  "files": {
+    "OC.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\npt = float(raw_input(\"Digite o pre\u00e7o da unidade do tijolo (Em reais): \"))\nht = float(raw_input(\"Digite a altura do tijolo (Em metros): \"))\nct = float(raw_input(\"Digite o comprimento do tijolo (Em metros): \"))\nhp = float(raw_input(\"Digite a altura das paredes (Em metros): \"))\ncp = float(raw_input(\"Digite o comprimento das paredes (Em metros): \"))\n\nap =  hp * cp\nat = ht * ct\nnt = 1.0*ap/at\nprint \"O n\u00famero total de tijolos \u00e9 %.1f e o or\u00e7amento final \u00e9 de R$ %.1f\" %(nt,1.0*nt*pt)\n",
+      "name": "OC.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1164742281b2a02ec05e220a649929ca",
+  "iid": 6628501897609216,
+  "activity_revision": "1.0.2"
+}

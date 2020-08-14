@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nflip = getattr(undertest, 'flip', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = [1, 2, 3, 4, 5, 6, 7]\n        assert flip(l1, 2, 5) == None\n        assert l1 == [1, 2, 6, 5, 4, 3, 7]\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "flip.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Flip\n\ndef flip(lista, i, j):\n\ttamanho = (j + 1 - i) / 2\n\tn = 0\n\tfor k in range(tamanho):\n\t\tlista[i], lista[j - n] = lista[j - n], lista[i]\n\t\ti += 1\n\t\tn += 1\n",
+      "name": "flip.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4fe7749569b9ed9a42297d0d8478ead4",
+  "iid": 6335807157698560,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\n# coding: utf-8\nimport unittest\nimport sys\nimport imp\n\nclass PublicTests(unittest.TestCase):\n\n    def test_simples(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        assert conta_votos(votacao, 543) == [1,0]\n\n    def test_exemplo(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        votacao.append('uma,nao,543,marina,PPPP')\n        votacao.append('uma,sim,5,joao,PPPP')\n        votacao.append('uma,nao,543,julio,P')\n        votacao.append('uma,sim,543,carlos,PBBBB')\n        votacao.append('uma,sim,543,juliana,PP')\n        votacao.append('uma,sim,99,joao,PPPP')\n\n        assert conta_votos(votacao, 543) == [3,2]\n\nif __name__ == '__main__':\n\n    undertest = imp.load_source(\"undertest\", sys.argv[-1])\n    conta_votos = undertest.conta_votos\n    del sys.argv[-1]\n    unittest.main()\n"
+    },
+    "assembleia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Analytics Assembleia\n\ndef conta_votos(votacoes, id_votacao):\n\tvotos = [0, 0]\n\tfor i in range(len(votacoes)):\n\t\tdados = votacoes[i].split(\",\")\n\t\tif int(dados[2]) == id_votacao:\n\t\t\tif dados[1] == \"sim\":\n\t\t\t\tvotos[0] += 1\n\t\t\telse:\n\t\t\t\tvotos[1] += 1\n\treturn votos\n",
+      "name": "assembleia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "341bfea0c33f766c27125ee6a6a3db80",
+  "iid": 6651555839213568,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "ap_rp2.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\naprovados = int(raw_input())\nreprovados = int(raw_input())\nprint \"An\u00e1lise da Turma\\n===\"\nprint \"N\u00famero de aprovados? N\u00famero de reprovados? ---\"\nprint \"Total de alunos na turma:\", aprovados + reprovados\nprint \"Aprovados:\", aprovados, \"=\", \"%.1f%%\" %(100.0*aprovados / (aprovados + reprovados))\nprint \"Reprovados:\", reprovados, \"=\", \"%.1f%%\" %(100.0*reprovados / (aprovados + reprovados))\n\n",
+      "name": "ap_rp2.py"
+    },
+    "ap_rp.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nprint \"An\u00e1lise da Turma \\n===\"\naprovados = int(raw_input(\"N\u00famero de aprovados? \"))\nreprovados = int(raw_input(\"N\u00famero de reprovados? \"))\nprint \"---\"\ntotal = aprovados + reprovados\nta = 1.0*aprovados / total * 100\ntr = 1.0*reprovados / total * 100\nprint \"Total de alunos na turma:\", total\nprint \"Aprovados:\", aprovados, \"=\", \"%.1f%%\" %ta\nprint \"Reprovados:\", reprovados, \"=\", \"%.1f%%\" %tr\n\n\n\n\n",
+      "name": "ap_rp.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b2426c3b13d6191a7050e51bc16a2a8b",
+  "iid": 6691770624638976,
+  "activity_revision": "1.0.1"
+}

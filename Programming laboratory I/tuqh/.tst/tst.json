@@ -1,0 +1,18 @@
+{
+  "files": {
+    "acertou.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Quem acertou menos\n\nN = int(raw_input())\n\nerros_lista = []\nfor i in range(N):\n\terros = 0\n\ttestes = raw_input()\n\tfor t in testes:\n\t\tif t == \"f\":\n\t\t\terros += 1\n\terros_lista.append(erros)\n\t \nmais_erros = 0\nfor i in range(len(erros_lista)):\n\tif erros_lista[i] > mais_erros:\n\t\tmais_erros = erros_lista[i]\n\t\taluno = i + 1\nprint \"O aluno %d errou %d teste(s).\" % (aluno, mais_erros)\n",
+      "name": "acertou.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 13,\n      \"vhalstead\": 53.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e0bcb27f4e99fc8f4d54391987c4ed5c",
+  "iid": 4553686915219456,
+  "activity_revision": "1.0.1"
+}

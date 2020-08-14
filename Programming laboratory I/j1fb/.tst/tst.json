@@ -1,0 +1,18 @@
+{
+  "files": {
+    "classificacao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Classifica\u00e7\u00e3o de Elementos Utilizando a M\u00e9dia dos Extremos\n\nN = int(raw_input())\n\nnumeros = []\nfor i in range(N):\n\tnumero = int(raw_input())\n\tnumeros.append(numero)\n\t\nmaior = numeros[0]\nmenor = numeros[0]\nfor n in numeros:\n\tif n >= maior:\n\t\tmaior = n\n\tif n <= menor:\n\t\tmenor = n\n\nmedia = (maior + menor) / 2.0\n\nprint \"Menor n\u00famero: %d\" % menor\nprint \"Maior n\u00famero: %d\" % maior\nprint \"M\u00e9dia dos extremos: %.2f\" % (media)\n\nabaixo = 0\nacima = 0\nfor n in numeros:\n\tif n > media:\n\t\tacima += 1\n\tif n < media:\n\t\tabaixo += 1\n\t\t\nprint \"%d n\u00famero(s) abaixo da m\u00e9dia\" % abaixo\nprint \"%d n\u00famero(s) acima da m\u00e9dia\" % acima\n",
+      "name": "classificacao.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 24,\n      \"vhalstead\": 171.3,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "972388355ebbe2f3484132b7ce45051a",
+  "iid": 5786509496025088,
+  "activity_revision": "1.1.1"
+}

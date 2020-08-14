@@ -1,0 +1,14 @@
+{
+  "files": {
+    "oifulano.py": {
+      "category": "answer",
+      "data": "nome = raw_input()\nprint \"Oi\", nome\n",
+      "name": "oifulano.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "23ee5ee0e707f5ee55206327d1a01c24",
+  "iid": 6377859518038016,
+  "activity_revision": "1.12.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mru.py": {
+      "category": "answer",
+      "data": "posicao_inicial = float(raw_input())\nvelocidade = float(raw_input())\ntempo = float(raw_input())\n\nposicao_final = posicao_inicial + velocidade * tempo\n\nprint \"%.2f\" %posicao_final\n",
+      "name": "mru.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "72b4734d2f89c563ff9c3c51d37ecac8",
+  "iid": 6156419594190848,
+  "activity_revision": "1.1.1"
+}

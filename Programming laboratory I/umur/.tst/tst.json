@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agenda.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Agenda Telef\u00f4nica\n\ndef ordena(nomes, telefones):\n\tinicia = True\n\twhile inicia:\n\t\tinicia = False\n\t\tfor j in range(len(nomes) - 1):\n\t\t\tif nomes[j] > nomes[j + 1]:\n\t\t\t\tnomes[j], nomes[j + 1] = nomes[j + 1], nomes[j]\n\t\t\t\ttelefones[j], telefones[j + 1] = telefones[j + 1], telefones[j]\n\t\t\t\tinicia = True\nnomes = []\ntelefones = []\nwhile True:\n\toperacao = raw_input()\n\tif operacao == \"finalizar\":\n\t\tbreak\n\telse:\n\t\tif operacao == \"inserir\":\t\n\t\t\tquantidade = int(raw_input())\n\t\t\tfor i in range(quantidade):\n\t\t\t\tnomes.append(raw_input())\n\t\t\t\ttelefones.append(raw_input())\n\t\t\tordena(nomes, telefones)\n\t\telif operacao == \"buscar\":\n\t\t\tnome = raw_input()\n\t\t\taux = 0\n\t\t\tfor i in range(len(nomes)):\n\t\t\t\tif nomes[i] == nome:\n\t\t\t\t\tprint \"Nome: %s\" % nome\n\t\t\t\t\tprint \"Fone: %s\" % telefones[i]\n\t\t\t\telse:\n\t\t\t\t\taux += 1\n\t\t\t\t\t\n\t\t\tif aux == len(nomes):\n\t\t\t\tprint \"Nome inexistente\"\n\t\t\t\n\t\t\tprint \"----------\"\n\t\telse:\n\t\t\tfor j in range(len(nomes)):\n\t\t\t\tprint \"Nome: %s\" % nomes[j]\n\t\t\t\tprint \"Fone: %s\" % telefones[j]\n\t\t\t\tprint \"----------\"\n",
+      "name": "agenda.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8a126dffeec4a16663ab636b98ee2763",
+  "iid": 5240597342322688,
+  "activity_revision": "1.0.0"
+}

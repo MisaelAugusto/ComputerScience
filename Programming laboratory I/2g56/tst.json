@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "0.1\n6.0\n0.3\n5.0\n0.6\n7.0\n",
+      "output": "== Estágio 1 ==\nPeso? Nota? == Estágio 2 ==\nPeso? Nota? == Estágio 3 ==\nPeso? Nota? == Resultados ==\nMédia parcial: 6.3\nNota na final, pra média 5.0 = 3.0\nNota na final, pra média 7.0 = 8.0\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "registradora.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Caixa Registradora\n\ndef caixa_registradora(vendas, meta):\n\ttotal = 0.0\n\tcomissoes = 0.0\n\tlista = []\n\tfor valor in vendas:\n\t\tif valor < 1000:\n\t\t\tcomissoes += (valor * 0.05)\n\t\telif 1000 <= valor < 5000:\n\t\t\tcomissoes += (valor * 0.10)\n\t\telse:\n\t\t\tcomissoes += (valor * 0.15)\n\t\ttotal += valor\n\tif (total - comissoes) >= meta:\n\t\tmensagem = \"Lucro\"\n\telse:\n\t\tmensagem = \"Prejuizo\"\n\tlista.append(total)\n\tlista.append(comissoes)\n\tlista.append(mensagem)\n\t\n\treturn lista\n\t\t\n\n",
+      "name": "registradora.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncaixa_registradora = getattr(undertest, 'caixa_registradora', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n       assert caixa_registradora([1000.0, 2000.0, 5000.0, 2500.0, 950.0], 2000.0) == [11450.0, 1347.5, 'Lucro']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8f9ee0456775a1e27db3d6271f12b183",
+  "iid": 6069634478374912,
+  "activity_revision": "1.0.1"
+}

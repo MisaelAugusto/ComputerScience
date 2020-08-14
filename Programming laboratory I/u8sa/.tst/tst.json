@@ -1,0 +1,18 @@
+{
+  "files": {
+    "consoantes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Mais consoantes\n\nvogais = [\"a\", \"e\", \"i\", \"o\", \"u\", \"A\", \"E\", \"I\", \"O\", \"U\"]\npalavras = 0\nwhile True:\n\tpalavra = raw_input()\n\tpalavras += 1\n\tnum_vogais = 0\n\tfor letra in palavra:\n\t\tif letra in vogais:\n\t\t\tnum_vogais += 1\n\tif num_vogais < (len(palavra) - num_vogais):\n\t\tbreak\n\nprint palavras\n",
+      "name": "consoantes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 16,\n      \"vhalstead\": 257.47,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "202d01de91c9a72cfb8c6d74f3e6ae90",
+  "iid": 6689748835893248,
+  "activity_revision": "1.0.1"
+}

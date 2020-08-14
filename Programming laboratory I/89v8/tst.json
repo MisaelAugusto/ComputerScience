@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4\n",
+      "output": "Área não comum: 18.26548\n"
+    }
+  ]
+}

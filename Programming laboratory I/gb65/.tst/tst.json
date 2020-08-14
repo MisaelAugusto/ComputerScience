@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nprimeiro_menor = getattr(undertest, 'primeiro_menor', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n      assert primeiro_menor(4, [7, 5, 3, 9, 11, 8]) == 2\n\n   def test_exemplo_2(self):\n      assert primeiro_menor(3, [7, 5, 3, 9, 11, 8]) == -1\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "1menor.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Primeiro Menor\n\ndef primeiro_menor(num, numeros):\n\taux = 0\n\tif len(numeros) > 0:\n\t\tfor i in range(len(numeros)):\n\t\t\tif int(numeros[i]) < num:\n\t\t\t\tindice = i\n\t\t\t\tbreak\n\t\t\telse:\n\t\t\t\taux += 1\n\t\t\t\t\n\tif aux == len(numeros) or len(numeros) == 0:\n\t\tindice = -1\n\t\t\t\n\treturn indice\n\t\ndef main():\n\tnumeros = raw_input().split()\n\tnum = int(raw_input())\n\ti = primeiro_menor(num, numeros)\n\tif i == -1:\n\t\tprint \"sem menores que %d\" % num\n\telse:\n\t\tprint \"primeiro menor que %d: %s\" % (num, numeros[i])\n\t\nif __name__ == \"__main__\":\n\tmain()\n\n",
+      "name": "1menor.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "36801e9d528a74348dc8274cdc6e1811",
+  "iid": 5328556393496576,
+  "activity_revision": "1.0.0"
+}

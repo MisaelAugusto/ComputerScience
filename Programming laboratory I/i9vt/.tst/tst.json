@@ -1,0 +1,14 @@
+{
+  "files": {
+    "controle.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nimport math\n\nvelocidade = float(raw_input())\ndiametro = float(raw_input())\ntempo = int(raw_input())\narea = math.pi * (diametro/2.0) **2\nvazao = velocidade * area * 1000\nlitros = tempo * vazao\nprint \"Quantidade de \u00e1gua =\", litros, \"litros.\"\n",
+      "name": "controle.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c15c541e17ebc84e91f9cc9a6c34d8ac",
+  "iid": 4678889003548672,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncesar = getattr(undertest, 'cesar', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        assert cesar(\"exemplo\", 4) == \"ibiqtps\"\n    \n    def test_exemplo_2(self):\n        assert cesar(\"Exemplo 2!\", 4) == \"Ebiqtps 2!\"\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "semi_cesar.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Semi C\u00e9sar\n\ndef cesar(msg, d):\n\tmsg = list(msg)\n\tfor i in range(len(msg)):\n\t\tif 97 <= ord(msg[i]) < 123:\n\t\t\tif ord(msg[i]) + d > ord(\"z\"):\n\t\t\t\tn = (ord(msg[i]) + d) - ord(\"z\")\n\t\t\t\tn += ord(\"a\") - 1\n\t\t\telse:\t\n\t\t\t\tn = ord(msg[i]) + d\n\t\t\tmsg[i] = chr(n)\n\tmsg = \"\".join(msg)\n\treturn msg\n\nprint cesar(\"v\", 4)\n",
+      "name": "semi_cesar.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "efd485b37596c91890da577a7d562a88",
+  "iid": 5867941740412928,
+  "activity_revision": "1.0.0"
+}

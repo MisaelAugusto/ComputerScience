@@ -1,0 +1,14 @@
+{
+  "files": {
+    "quadrado.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nimport math\nraio = float(raw_input())\narea_circulo = math.pi * raio**2\nlado_quadrado = 2 * (raio * math.sqrt(2) / 2)\narea_quadrado = lado_quadrado **2\narea_nao_comum = area_circulo - area_quadrado\nprint \"\u00c1rea n\u00e3o comum: %.5f\" %area_nao_comum\n\n",
+      "name": "quadrado.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "110edfbc962c2e4569baf1d198e9fb6e",
+  "iid": 5402289372135424,
+  "activity_revision": "1.1.1"
+}

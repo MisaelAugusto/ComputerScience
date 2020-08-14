@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "9000\n1600\n1830.50\n1510\n2325.30\n2300\n3000\n",
+      "output": "Total de vendas: R$ 12565.80 (meta atingida)\n----\nBonificação:\nFuncionário 1: R$ 16.00\nFuncionário 2: R$ 18.30\nFuncionário 3: R$ 15.10\nFuncionário 4: R$ 23.25\nFuncionário 5: R$ 23.00\nFuncionário 6: R$ 30.00\n"
+    },
+    {
+      "category": "public",
+      "input": "9000\n1400\n1830.50\n1510\n2325.30\n2300\n3000\n",
+      "output": "Total de vendas: R$ 12365.80 (meta não foi atingida)\n----\n"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "bubble.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Bubblesort\n\ndef bubblesort(dados):\n\tupdate = True\n\tj = 0\n\twhile j < len(dados) - 1 and update:\n\t\tupdate = False\n\t\tfor i in range(len(dados) - 1):\t\n\t\t\tif dados[i] > dados[i + 1]:\n\t\t\t\tdados[i], dados[i + 1] = dados[i + 1], dados[i]\n\t\t\t\tupdate = True\n\t\tj += 1\n\treturn dados\n",
+      "name": "bubble.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nbubblesort = getattr(undertest, 'bubblesort', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        lista = [3,9,1,2]\n        bubblesort(lista)\n        assert lista == [1,2,3,9]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "603b9a533a3e9440bbc67b1cbffc96ff",
+  "iid": 5877573473009664,
+  "activity_revision": "1.0.0"
+}

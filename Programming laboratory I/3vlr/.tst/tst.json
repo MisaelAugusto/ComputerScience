@@ -1,0 +1,19 @@
+{
+  "files": {
+    "insercao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Inser\u00e7\u00e3o ordenada do \u00faltimo elemento de uma lista\n\ndef insere_ordenado_ultimo(lista):\n\tfor i in range(len(lista) - 1, 0, -1):\n\t\tif lista[i] < lista[i - 1]:\n\t\t\tlista[i], lista[i - 1] = lista[i - 1], lista[i]\n\t\telse:\n\t\t\tbreak\n\t\n\treturn lista\n\nl1 = [2,6,9,11,13,5]\nprint insere_ordenado_ultimo(l1)\n\n\nl2 = [1,2,3,0]\nprint insere_ordenado_ultimo(l2)\n",
+      "name": "insercao.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninsere_ordenado_ultimo = getattr(undertest, 'insere_ordenado_ultimo', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = [2,6,9,11,13,5]\n        insere_ordenado_ultimo(l1)\n        assert l1 == [2,5,6,9,11,13]\n    \n    def test_outro(self):\n        l2 = [1,2,3,0]\n        insere_ordenado_ultimo(l2)\n        assert l2 == [0,1,2,3]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fe69e353154b7ae8876aa82f4e2af16f",
+  "iid": 5806955620728832,
+  "activity_revision": "1.0.1"
+}

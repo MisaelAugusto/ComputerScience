@@ -1,0 +1,14 @@
+{
+  "files": {
+    "hipotenusa.py": {
+      "category": "answer",
+      "data": "c1 = float(raw_input(\"Medida do Cateto 1? \"))\nc2 = float(raw_input(\"Medida do Cateto 2? \"))\nh = (c1**2 + c2**2)**(1.0/2)\nprint \"Medida da Hipotenusa: %.2f\" %h\n\n",
+      "name": "hipotenusa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "061f819e43b3731ade8d81fad9496b85",
+  "iid": 5833760075415552,
+  "activity_revision": "1.1.3"
+}

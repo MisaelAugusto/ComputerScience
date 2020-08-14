@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 10,\n      \"pep8\": 0,\n      \"lloc\": 37,\n      \"vhalstead\": 147.15,\n      \"header\": 4\n    }\n  ]\n}"
+    },
+    "segundo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Segundo Maior e Segundo Menor\n\nnum1 = int(raw_input())\nnum2 = int(raw_input())\nnum3 = int(raw_input())\nnum4 = int(raw_input())\n\nprint \"Considerando os n\u00fameros %d, %d, %d e %d\" %(num1, num2, num3, num4)\n\nif (num1 >= num2 >= num3 >= num4) or (num4 >= num2 >= num3 >= num1):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num3, num2)\nelif (num1 >= num3 >= num2 >= num4) or (num4 >= num3 >= num2 >= num1):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num2, num3)\nelif (num1 >= num3 >= num4 >= num2) or (num2 >= num3 >= num4 >= num1):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num4, num3)\nelif (num1 >= num4 >= num3 >= num2) or (num2 >= num4 >= num3 >= num1):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num3, num4)\nelif (num1 >= num2 >= num4 >= num3) or (num3 >= num2 >= num4 >= num1):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num4, num2)\nelif (num1 >= num4 >= num2 >= num3) or (num3 >= num4 >= num2 >= num1):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num2, num4)\nelif (num2 >= num1 >= num4 >= num3) or (num3 >= num1 >= num4 >= num2):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num4, num1)\nelif (num2 >= num4 >= num1 >= num3) or (num3 >= num4 >= num1 >= num2):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num1, num4)\nelif (num2 >= num1 >= num3 >= num4) or (num4 >= num1 >= num3 >= num2):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num3, num1)\nelif (num2 >= num3 >= num1 >= num4) or (num4 >= num3 >= num1 >= num2):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num1, num3)\nelif (num3 >= num1 >= num2 >= num4) or (num4 >= num1 >= num2 >= num3):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num2, num1)\nelif (num3 >= num2 >= num1 >= num4) or (num4 >= num2 >= num1 >= num3):\n\tprint \"O segundo menor n\u00famero \u00e9 %d\\nO segundo maior n\u00famero \u00e9 %d\" % (num1, num2)\n\n",
+      "name": "segundo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f46e95301b8b995f0c84c73a0731a979",
+  "iid": 4773787379695616,
+  "activity_revision": "1.0.1"
+}

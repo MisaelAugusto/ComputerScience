@@ -1,0 +1,14 @@
+{
+  "files": {
+    "salario.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nsb = float(raw_input())\nhoras = int(raw_input())\nhb = sb *1.0 / horas\nprint \"Sal\u00e1rio Bruto =\", sb\nprint \"Hora Bruta =\", hb\nprint \"Desconto IR =\", sb*0.11\nprint \"Desconto INSS =\", sb*0.08\nprint \"Desconto Sindicato =\", sb*0.05\nprint \"Sal\u00e1rio L\u00edquido =\", sb - sb*0.24\nprint \"Hora L\u00edquida =\", hb - hb*0.24\n",
+      "name": "salario.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "afdcee550df8064416428c65b3357698",
+  "iid": 6599691357650944,
+  "activity_revision": "1.0.3"
+}

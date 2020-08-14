@@ -1,0 +1,14 @@
+{
+  "files": {
+    "pesquisa.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Pesquisa Hot\u00e9is\n\nvalores = []\ntamanhos = []\nconfortos = []\nhoteis = []\nwhile True:\n\tentrada = raw_input().split(\",\")\n\tif entrada[0] == \"---\":\n\t\tbreak\n\tvalores.append(entrada[0])\n\ttamanhos.append(entrada[1])\n\tconfortos.append(entrada[2])\n\thoteis.append(entrada[3])\n\n\nwhile True:\n\tcriterio = raw_input()\n\tif criterio == \"fim\":\n\t\tbreak\t\n\thotel = hoteis[0]\n\tif criterio == \"valor\":\t\n\t\tmenor_valor = float(valores[0])\n\t\tfor i in range(1, len(valores)):\n\t\t\tif float(valores[i]) < menor_valor:\n\t\t\t\tmenor_valor = float(valores[i])\n\t\t\t\thotel = hoteis[i]\n\telif criterio == \"tamanho\":\t\t\t\n\t\tmaior_tamanho = float(tamanhos[0])\n\t\tfor i in range(1, len(tamanhos)):\t\n\t\t\tif int(tamanhos[i]) > maior_tamanho:\n\t\t\t\tmaior_tamanho = int(tamanhos[i])\n\t\t\t\thotel = hoteis[i]\n\telse:\n\t\tmaior_conforto = int(confortos[0])\n\t\tfor i in range(1, len(confortos)):\n\t\t\tif int(confortos[i]) > maior_conforto:\n\t\t\t\tmaior_conforto = int(confortos[i])\n\t\t\t\thotel = hoteis[i]\n\tprint hotel\n",
+      "name": "pesquisa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1ffa7fac31b2c18294b825da613ccad0",
+  "iid": 4794501100994560,
+  "activity_revision": "1.0.2"
+}

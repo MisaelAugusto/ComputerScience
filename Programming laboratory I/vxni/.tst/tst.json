@@ -1,0 +1,14 @@
+{
+  "files": {
+    "ordem.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Ordem Alfab\u00e9tica\n\nN = int(raw_input())\n\npalavras = []\nfor i in range(N):\n\tpalavras.append(raw_input())\n\t\nprint \"---\"\npalavra_referencia = raw_input()\n\nantes = 0\ndepois = 0\nfor palavra in palavras:\n\tif palavra != palavra_referencia:\n\t\tif palavra < palavra_referencia:\n\t\t\tantes += 1\n\t\tif palavra > palavra_referencia:\n\t\t\tdepois += 1\n\telse:\n\t\tcontinue\n\nprint \"%d antes\" % antes\nprint \"%d depois\" % depois\n",
+      "name": "ordem.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "46de61dfc0f42fb78f9918222a4865d3",
+  "iid": 6401187230253056,
+  "activity_revision": "1.0.0"
+}

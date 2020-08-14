@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "10\n4\n5\n10\n7\n3\n-1\n3\n4\n1\n-1\n8\n2\n-1\n7\n2\n1\n4\n3\n-1\n",
+      "name": "exemplo",
+      "output": "conjunto 1: 25\nconjunto 4: 17\n"
+    }
+  ]
+}

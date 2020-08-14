@@ -1,0 +1,18 @@
+{
+  "files": {
+    "mais_elementos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Conjunto com mais elementos\n\ntamanho = 0\ntamanhos = []\nwhile True:\n\tnumero = raw_input()\n\tif numero == \"fim\":\n\t\tbreak\n\telse:\n\t\tif int(numero) >= 0:\n\t\t\ttamanho += 1\n\t\telse:\n\t\t\ttamanhos.append(tamanho)\n\t\t\ttamanho = 0\n\nif len(tamanhos) > 0:\n\tmaior = tamanhos[0]\n\tconjunto = 0\n\tfor i in range(1, len(tamanhos)):\n\t\tif tamanhos[i] > maior:\n\t\t\tmaior = tamanhos[i]\n\t\t\tconjunto = i\n\tprint \"Conjunto %d - %d elemento(s)\" % (conjunto + 1, maior)\n\t\n",
+      "name": "mais_elementos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b013c3506de8079478f7902cfc7ee707",
+  "iid": 6347489334525952,
+  "activity_revision": "1.0.1"
+}

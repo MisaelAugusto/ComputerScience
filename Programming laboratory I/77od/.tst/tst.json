@@ -1,0 +1,18 @@
+{
+  "files": {
+    "roleta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Roleta\n\nnumero_aposta = int(raw_input())\ncor_aposta = raw_input()\n\nnumero_sorteado = int(raw_input())\ncor_sorteada = raw_input()\n\ncondicao1 = numero_aposta == numero_sorteado\ncondicao2 = cor_aposta == cor_sorteada\n\nif condicao1:\n\tif condicao2:\n\t\tprint 150\n\telse:\n\t\tprint 100\nelse:\n\tif condicao2:\n\t\tif numero_sorteado > numero_aposta:\n\t\t\tprint 80\n\t\telse:\n\t\t\tprint 100\n\telse:\n\t\tprint 0\n\t\t\n\n\n\t\n\t\n",
+      "name": "roleta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 69.76,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "82391dac7da30ddac7d47206a9460bef",
+  "iid": 5783695352922112,
+  "activity_revision": "1.0.1"
+}

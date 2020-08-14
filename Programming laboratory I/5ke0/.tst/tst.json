@@ -1,0 +1,14 @@
+{
+  "files": {
+    "dobro.py": {
+      "category": "answer",
+      "data": "numero = int(raw_input())\nprint numero*2\n",
+      "name": "dobro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "240a14844c306a2e3f9102dcabe48999",
+  "iid": 4664382852169728,
+  "activity_revision": "1.1.1"
+}

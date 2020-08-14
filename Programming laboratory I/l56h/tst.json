@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "5\npizza\natum\ncoordenacao\nmartelo\ncostela\n",
+      "output": "2 palavra(s) com letras dobradas:\npizza\ncoordenacao\n---\n3 palavra(s) sem letras dobradas:\natum\nmartelo\ncostela\n"
+    }
+  ]
+}

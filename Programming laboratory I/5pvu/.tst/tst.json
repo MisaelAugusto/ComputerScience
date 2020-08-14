@@ -1,0 +1,18 @@
+{
+  "files": {
+    "serie.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: S\u00e9rie: PA de raz\u00e3o 3\n\nfor i in range(4, 3002, 3):\n\tprint i\n",
+      "name": "serie.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 3,\n      \"vhalstead\": 0.0,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6dd64eb8aece5d9a4176a7417a50d26e",
+  "iid": 5870428593586176,
+  "activity_revision": "1.0.1"
+}

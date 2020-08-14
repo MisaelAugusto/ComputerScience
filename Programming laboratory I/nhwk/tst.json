@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "2000.0,1,16,h1\n4000.0,4,7,h2\n1900.0,6,23,h3\n1500.0,3,5,h4\n8000.0,0,1,h5\n---\nvalor\ntamanho\nconforto\nfim\n",
+      "type": "io",
+      "output": "h4\nh3\nh3\n"
+    }
+  ]
+}

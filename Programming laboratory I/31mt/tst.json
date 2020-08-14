@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "10\n",
+      "output": "Opção 1: 3 fatias cada, 2 de resto\nOpção 2: 3.20 fatias cada\n"
+    }
+  ]
+}

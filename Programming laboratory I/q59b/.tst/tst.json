@@ -1,0 +1,18 @@
+{
+  "files": {
+    "disciplina.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Status de uma Disciplina\n\nnota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\nfaltas = int(raw_input())\n\nmedia = (nota1 + nota2 + nota3) / 3\nif faltas > 7:\n\tprint \"reprovado por faltas\"\nelse:\n\tif 0 < media < 4:\n\t\tprint \"reprovado por nota\"\n\telif 4 <= media < 7:\n\t\tprint \"prova final\"\n\telse:\n\t\tprint \"aprovado por media\"\n\t\t\n",
+      "name": "disciplina.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 1,\n      \"lloc\": 13,\n      \"vhalstead\": 81.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f88d9aba0eb11f07337a610092cc4348",
+  "iid": 5802506135273472,
+  "activity_revision": "1.1.1"
+}

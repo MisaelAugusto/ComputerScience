@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nagrupa_pares_impares = getattr(undertest, 'agrupa_pares_impares', None)\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_example(self):\n        assert agrupa_pares_impares([10, 24, 97, 88]) == {\"pares\":[10, 24, 88], \"impares\":[97]}\n        assert agrupa_pares_impares([11, 23, 35]) == {\"pares\":[ ], \"impares\":[11, 23, 35]}\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "agrupa.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Agrupa Pares\n\ndef agrupa_pares_impares(lista):\n\tdic = {}\n\tpares = []\n\timpares= []\n\tfor numero in lista:\n\t\tif numero % 2 == 0:\n\t\t\tpares.append(numero)\n\t\telse:\n\t\t\timpares.append(numero)\n\t\n\tdic[\"pares\"] = pares\n\tdic[\"impares\"] = impares\n\t\n\treturn dic\n\t\n",
+      "name": "agrupa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3051ae94b3423e2e53eb2ee5f1126cc4",
+  "iid": 5344676211064832,
+  "activity_revision": "1.0.0"
+}

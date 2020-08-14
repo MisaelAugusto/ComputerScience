@@ -1,0 +1,14 @@
+{
+  "files": {
+    "FC.py": {
+      "category": "answer",
+      "data": "f = float(raw_input())\nc = (f - 32)/1.8\nk = c + 273.15\nprint \"Fahrenheit: %.3f F\" %f\nprint \"Celsius: %.3f C\" %c\nprint \"Kelvin: %.3f K\" %k\n",
+      "name": "FC.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d65d51cb12c2c92955c3bd2b9bf262e9",
+  "iid": 4864284051898368,
+  "activity_revision": "1.1.1"
+}

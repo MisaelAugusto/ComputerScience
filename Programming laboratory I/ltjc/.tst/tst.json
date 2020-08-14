@@ -1,0 +1,18 @@
+{
+  "files": {
+    "porta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Porta Eletr\u00f4nica\n\nregistrados = []\nwhile True:\n\tentrada = raw_input().split()\n\tif entrada[0] == \"S\":\n\t\tbreak\n\telse:\n\t\tcategoria = entrada[1]\n\t\tif entrada[0] == \"R\":\t\n\t\t\tregistrados.append(categoria[0])\n\t\telse:\n\t\t\tn = 0\n\t\t\tfor r in registrados:\n\t\t\t\tif r == categoria[0]:\n\t\t\t\t\tn += 1\n\t\t\tprint n\n\n\t\t\t\t\n\t\t\n\t\t\t\n",
+      "name": "porta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 14,\n      \"vhalstead\": 51.89,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "55971852605b90ace371d3e0aecbb64c",
+  "iid": 5881599199543296,
+  "activity_revision": "1.0.4"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "parte.py": {
+      "category": "answer",
+      "data": "numero = float(raw_input())\nnumero = numero - int(numero)\nprint numero\n",
+      "name": "parte.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1e9947e1c0b30b18a29c69f09323eb78",
+  "iid": 6401302422618112,
+  "activity_revision": "1.1.0"
+}

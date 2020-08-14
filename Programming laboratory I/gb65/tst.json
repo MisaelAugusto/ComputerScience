@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "7 5 3 9 11 8\n3\n",
+      "output": "sem menores que 3\n"
+    },
+    {
+      "category": "public",
+      "input": "7 5 3 9 11 8\n4\n",
+      "output": "primeiro menor que 4: 3\n"
+    },
+    {
+      "category": "public",
+      "type": "script",
+      "script": "python public_tests.py"
+    }
+  ]
+}

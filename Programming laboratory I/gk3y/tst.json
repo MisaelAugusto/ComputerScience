@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "58\n10\n50\n60\n55\n57\n59\n58\n",
+      "output": "palpite? baixo\npalpite? baixo\npalpite? alto\npalpite? baixo\npalpite? baixo\npalpite? alto\npalpite? Você acertou em 7 tentativas.\n"
+    }
+  ]
+}

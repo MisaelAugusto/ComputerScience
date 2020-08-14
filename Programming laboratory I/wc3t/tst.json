@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "m 1.89\n****\n",
+      "output": "Homem: peso ideal é 79.4\n"
+    },
+    {
+      "category": "public",
+      "input": "F 1.60\n****\n",
+      "output": "Mulher: peso ideal é 54.7\n"
+    },
+    {
+      "category": "public",
+      "input": "M 1.60\n****\n",
+      "output": "Homem: peso ideal é 58.3\n"
+    }
+  ]
+}

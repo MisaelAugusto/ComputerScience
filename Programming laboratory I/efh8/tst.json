@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "C O 2\nH 2 O\nC 12 H 22 O 11\nfim\n",
+      "name": "exemplo 1",
+      "output": "44\n18\n342\n"
+    }
+  ]
+}

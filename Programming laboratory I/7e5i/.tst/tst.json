@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 66.61,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "ataque.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Ataque Mais Positivo de um Campeonato\n\nN = int(raw_input())\n\ntimes = []\ngols = []\ntotal_gols = 0\nfor i in range(N):\n\tnome_time = raw_input()\n\tnumero_de_gols = float(raw_input())\n\ttimes.append(nome_time)\n\tgols.append(numero_de_gols)\n\ttotal_gols += numero_de_gols\nmedia = total_gols / N\n\nmelhor_ataque = 0\nfor i in gols:\n\tif i > melhor_ataque:\n\t\tmelhor_ataque = i\n\t\t\nmelhores_times = []\t\t\nfor i in range(N):\n\tif gols[i] == melhor_ataque:\n\t\tmelhores_times.append(times[i])\n\t\nprint \"Time(s) com melhor ataque (%d gol(s)):\" % (melhor_ataque)\nfor i in melhores_times:\n\tprint i\nprint \"\"\nprint \"M\u00e9dia de gols marcados: %.1f\" % media\n\n\t\t\t\n",
+      "name": "ataque.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "64e811f31c56198f67227d8ab72ac020",
+  "iid": 5038011855142912,
+  "activity_revision": "1.1.1"
+}

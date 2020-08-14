@@ -1,0 +1,14 @@
+{
+  "files": {
+    "tweets.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\ntweets = int(raw_input())\npaginas = tweets / 400\nresto = tweets % 400\nperdidos = resto * 100.0 / tweets \nprint \"Ser\u00e3o necess\u00e1rias %i p\u00e1gina(s) para visualizar os tweets.\" %paginas\nprint \"%.1f%% dos tweets ser\u00e3o perdidos.\" %perdidos\n",
+      "name": "tweets.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d5a8cc870832ad13b23c0638a33de132",
+  "iid": 6393636543528960,
+  "activity_revision": "1.1.1"
+}

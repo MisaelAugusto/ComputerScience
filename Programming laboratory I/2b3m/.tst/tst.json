@@ -1,0 +1,14 @@
+{
+  "files": {
+    "perimetro_triangulo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nx1 = int(raw_input())\ny1 = int(raw_input())\nx2 = int(raw_input())\ny2 = int(raw_input())\nx3 = int(raw_input())\ny3 = int(raw_input())\n\nlado_a = ((x1 - x2)**2 + (y1 - y2)**2)**(0.5)\nlado_b = ((x2 - x3)**2 + (y2 - y3)**2)**(0.5)\nlado_c = ((x3 - x1)**2 + (y3 - y1)**2)**(0.5)\nperimetro = lado_a + lado_b + lado_c\nprint \"O per\u00edmetro \u00e9 de %.2f\" %perimetro\n\n",
+      "name": "perimetro_triangulo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c6158e9eb164055d21b48123d2b12681",
+  "iid": 5838352469196800,
+  "activity_revision": "1.1.0"
+}

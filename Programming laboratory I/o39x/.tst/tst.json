@@ -1,0 +1,18 @@
+{
+  "files": {
+    "alvo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Tiro ao Alvo 2\n\ntiros = 0\ndistancia_total = 0\ndistancias = []\nwhile True:\n\tx = float(raw_input())\n\ty = float(raw_input())\n\tdistancia = (x ** 2 + y ** 2) ** (0.5)\n\tif distancia > 200:\n\t\tbreak\n\ttiros += 1\n\tdistancias.append(distancia)\n\tdistancia_total += distancia\n\ndistancia_media = distancia_total / len(distancias)\nmelhor_tiro = distancias[0]\nprint \"%.2f cm (melhor tiro)\" % melhor_tiro\nfor i in range(1, len(distancias)):\n\tif melhor_tiro > distancias[i]:\n\t\tmelhor_tiro = distancias[i]\n\t\tprint \"%.2f cm (melhor tiro)\" % melhor_tiro\n\telse:\n\t\tprint \"%.2f cm\" % distancias[i]\n\t\t\nprint \"--\"\nprint \"num tiros: %d\" % tiros\nprint \"melhor tiro: %.2f cm\" % melhor_tiro\nprint \"distancia media: %.2f cm\" % distancia_media\n",
+      "name": "alvo.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 23,\n      \"vhalstead\": 176.42,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "72ddfb395b8eab6edebde7b987c573d4",
+  "iid": 4939155129761792,
+  "activity_revision": "1.0.2"
+}

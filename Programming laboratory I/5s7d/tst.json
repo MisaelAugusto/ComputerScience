@@ -1,0 +1,8 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "output": "{{Hello}} {{World}}!\n"
+    }
+  ]
+}

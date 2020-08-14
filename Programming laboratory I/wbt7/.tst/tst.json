@@ -1,0 +1,14 @@
+{
+  "files": {
+    "dias.py": {
+      "category": "answer",
+      "data": "segundos = int(raw_input())\ndias =  segundos / 86400\nprint dias\n\n",
+      "name": "dias.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "113c872a017bd22e5d3397b3f9c9a8de",
+  "iid": 5397995243700224,
+  "activity_revision": "1.1.0"
+}

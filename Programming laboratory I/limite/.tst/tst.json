@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limite.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: M\u00e9dia Atinge Limite\n\ntotal = 0\nnumeros = []\nwhile True:\n\tnumero = raw_input()\n\tif numero == \"-\":\n\t\tbreak\n\tnumeros.append(numero)\n\nlimite = float(raw_input())\n\nn = 1\ntotal = 0\nfor i in range(len(numeros)):\n\ttotal += float(numeros[i])\n\tmedia =  total / n\n\tif media > limite:\n\t\tprint \"media = %.1f\" % media\n\t\tprint \"num = %d\" % n\n\t\tbreak\n\telse:\n\t\tif i == len(numeros) - 1:\n\t\t\tprint \"limite n\u00e3o alcan\u00e7ado\"\n\t\t\tbreak\n\tn += 1\n",
+      "name": "limite.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 17,\n      \"vhalstead\": 98.1,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "20f1afe0edaa17c3c08560037dd6ba0d",
+  "iid": 6214834773295104,
+  "activity_revision": "1.0.3"
+}

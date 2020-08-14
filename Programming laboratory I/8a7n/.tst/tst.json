@@ -1,0 +1,18 @@
+{
+  "files": {
+    "selecao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# ALuno: Misael Augusto\n# Matr\u00edcula: 117112505\n# Problema: Sele\u00e7\u00e3o Projeto\n\ncre = float(raw_input())\nexperiencia = float(raw_input())\nnota = float(raw_input())\n\nif cre < 7:\n\tif experiencia < 6:\n\t\tprint \"Candidato eliminado. CRE e experi\u00eancia abaixo do limite.\"\n\telse:\n\t\tprint \"Candidato eliminado. CRE abaixo do limite.\"\nelse:\n\tif experiencia >= 6:\n\t\tif nota <= 3:\n\t\t\tprint \"Candidato classificado.\"\n\t\telse:\n\t\t\tprint \"Candidato aprovado.\"\n\telse:\n\t\tprint \"Candidato eliminado. Experi\u00eancia abaixo do limite.\"\n\n\t\n",
+      "name": "selecao.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 36.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "73ed312f1f4f52215ef941c16a3bbcb7",
+  "iid": 5350727115341824,
+  "activity_revision": "1.0.1"
+}

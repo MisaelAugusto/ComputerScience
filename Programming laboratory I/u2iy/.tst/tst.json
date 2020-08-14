@@ -1,0 +1,14 @@
+{
+  "files": {
+    "caixa_preta2.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Caixa Preta Descartando Leituras\n\npeso = 0\ncombustivel = 0\naltitude = 0\nwhile True:\n\tentrada = raw_input().split()\n\tif int(entrada[0]) >= 0:\n\t\tpeso += 1\n\t\tif int(entrada[1]) >= 0:\n\t\t\tcombustivel += 1\n\t\t\tif int(entrada[2]) >= 0:\n\t\t\t\taltitude += 1\n\t\t\telse:\n\t\t\t\tprint \"dado inconsistente. altitude negativa.\"\n\t\t\t\tbreak\n\t\telse:\n\t\t\tprint \"dado inconsistente. combust\u00edvel negativo.\"\n\t\t\tbreak\n\telse:\n\t\tprint \"dado inconsistente. peso negativo.\"\n\t\tbreak\n\t\t\t\t\n\t\t\t\t\nprint \"peso: %d\" % peso\nprint \"combust\u00edvel: %d\" % combustivel\nprint \"altitude: %d\" % altitude\n",
+      "name": "caixa_preta2.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "410dcc0b50c85c87c3ca0c495341cde4",
+  "iid": 6694456724029440,
+  "activity_revision": "1.0.1"
+}

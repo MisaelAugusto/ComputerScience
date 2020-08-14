@@ -1,0 +1,19 @@
+{
+  "files": {
+    "filtra_altera.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Filtrando ELementos e Alterando uma Lista\n\ndef filtra_altera_lista(num, lista):\n\tfor i in range(len(lista) -1, -1, -1):\n\t\tif i % num > 0:\n\t\t\tlista.pop(i)\n\t\n",
+      "name": "filtra_altera.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_altera_lista = getattr(undertest, 'filtra_altera_lista', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       seq = [0,1,2,3,4,5,6]\n       filtra_altera_lista(2, seq)\n       assert seq == [0, 2, 4 ,6]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e2efc0672772532231d42084f31a7139",
+  "iid": 6356480647233536,
+  "activity_revision": "1.0.9"
+}

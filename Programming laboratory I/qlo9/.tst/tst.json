@@ -1,0 +1,19 @@
+{
+  "files": {
+    "organizando.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Organizando as Duplas do Projeto\n\ndef insere_nome(aluno1, duplas, aluno2):\n\tinicia = False\n\tfor i in range(len(duplas)):\n\t\tif aluno2 == duplas[i]:\n\t\t\tposicao = i\n\t\t\tinicia = True\n\t\t\tbreak\n\t\n\tduplas.append(aluno1)\n\tif inicia:\n\t\tfor i in range(len(duplas) - 1, posicao, -1):\n\t\t\tduplas[i], duplas[i - 1] = duplas[i - 1], duplas[i]\n",
+      "name": "organizando.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninsere_nome = getattr(undertest, 'insere_nome', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     duplas = ['joel', 'juliano', 'cesar', 'auri', 'zito']\n     assert insere_nome('gil', duplas, 'juliano') == None\n     assert duplas == ['joel','gil','juliano','cesar','auri','zito']\n     assert insere_nome('marta', duplas, 'vera') == None\n     assert duplas == ['joel', 'gil', 'juliano', 'cesar', 'auri', 'zito', 'marta']\n   \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0953120074c1b8ed26084e4422d5ece4",
+  "iid": 5612818267111424,
+  "activity_revision": "1.0.5"
+}

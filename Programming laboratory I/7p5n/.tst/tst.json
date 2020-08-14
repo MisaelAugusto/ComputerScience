@@ -1,0 +1,14 @@
+{
+  "files": {
+    "trauma.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Hospital de Trauma\n\ndef cadastra(fila, nome, prioridade):\n\tnomes.append(nome)\n\tfor i in range(len(prioridade)):\n\t\tfor i in range(len(prioridade) - 1):\n\t\t\tif prioridade[i] < prioridade[i + 1]:\n\t\t\t\tprioridade[i], prioridade[i + 1] = prioridade[i + 1], prioridade[i]\n\t\t\t\tfila[i], fila[i + 1] = fila[i + 1], fila[i]\n\t\n\treturn fila\n\t\ndef resumo():\n\tfor nome in nomes:\n\t\tprint nome\n\tprint \"---\"\n\tfor i in range(0, len(prioridades) - 1, 2):\n\t\tprint \"%s: %d\" % (prioridades[i], prioridades[i + 1])\n\tprint \"---\"\n\t\t\nprioridades = [\"vermelho\", 0, \"laranja\", 0, \"amarelo\", 0, \"verde\", 0, \"azul\", 0]\nprioridade = []\nnomes = []\nwhile True:\n\tdados = raw_input().split()\n\tif dados[0] == \"fim\":\n\t\tresumo()\n\t\tbreak\n\telse:\n\t\tif dados[1] == \"vermelho\":\n\t\t\tprioridades[1] += 1\n\t\t\tp = 5\n\t\telif dados[1] == \"laranja\":\n\t\t\tprioridades[3] += 1\n\t\t\tp = 4\n\t\telif dados[1] == \"amarelo\":\n\t\t\tprioridades[5] += 1\n\t\t\tp = 3\n\t\telif dados[1] == \"verde\":\n\t\t\tprioridades[7] += 1\n\t\t\tp = 2\n\t\telse:\n\t\t\tprioridades[9] += 1\n\t\t\tp = 1\n\t\t\n\t\tprioridade.append(p)\n\t\tcadastra(nomes, dados[0], prioridade)\n\n\n",
+      "name": "trauma.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3cc2d7491980d1219d1de6c034e75924",
+  "iid": 5841113898287104,
+  "activity_revision": "1.0.1"
+}

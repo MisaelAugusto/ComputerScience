@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "um exemplo de frase\n1\n12\n",
+      "output": "m , e x e m p l o , d\n"
+    }
+  ]
+}

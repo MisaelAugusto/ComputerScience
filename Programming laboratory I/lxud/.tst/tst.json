@@ -1,0 +1,18 @@
+{
+  "files": {
+    "pi.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Pi por Aproxima\u00e7\u00f5es\n\ne = float(raw_input())\npi = 4.0\n\nprint \"%.6f\" % pi\n\nn = -3\nwhile True:\n\tpi2 = pi + 4 * (1.0 / n)\n\tprint \"%.6f\" % pi2\n\tif abs(pi - pi2) < e:\n\t\tbreak\n\tif n < 0:\n\t\tn = n * (-1) + 2\n\telse:\n\t\tn = (n + 2) * (-1)\n\tpi = pi2\n",
+      "name": "pi.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 131.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c8db2737ebdda15039380b17371527d0",
+  "iid": 5874543306473472,
+  "activity_revision": "1.0.1"
+}

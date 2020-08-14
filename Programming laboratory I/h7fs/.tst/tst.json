@@ -1,0 +1,18 @@
+{
+  "files": {
+    "validacao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Valida\u00e7\u00e3o de Tri\u00e2ngulos\n\na = int(raw_input())\nb = int(raw_input())\nc = int(raw_input())\ncondicao1 = abs(b - c) < a < (b + c)\n\nif condicao1:\n\tperimetro = a + b + c\n\tprint \"triangulo valido. %i\" % perimetro\nelse:\n\tprint \"triangulo invalido.\"\n",
+      "name": "validacao.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 103.61,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1269347a3cc1239a8084f04f1213f52a",
+  "iid": 5016252611297280,
+  "activity_revision": "1.1.1"
+}

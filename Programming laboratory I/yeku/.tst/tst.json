@@ -1,0 +1,14 @@
+{
+  "files": {
+    "aprovacao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nunidade = int(raw_input('Unidade? '))\nmedia = float(raw_input('M\u00e9dia de aprova\u00e7\u00e3o na unidade? '))\nproxima_unidade = unidade + 1\n\nprint '\\nO aluno vai para a unidade %i com m\u00e9dia %.1f.' % (proxima_unidade,media)\n\n",
+      "name": "aprovacao.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "124e128dad90d21f4afb830d1b5d3ec8",
+  "iid": 6455856124133376,
+  "activity_revision": "1.1.0"
+}

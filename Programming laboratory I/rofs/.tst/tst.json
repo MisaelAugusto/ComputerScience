@@ -1,0 +1,14 @@
+{
+  "files": {
+    "campanha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Campanha\n\ngols_marcados = 0\ngols_sofridos = 0\npontos_fora = 0\npontos_casa = 0\nvitorias = 0\nderrotas = 0\nempates = 0\nfor i in range(10):\n\tpartida = raw_input()\n\tif partida[5] == \"c\":\n\t\tgols_marcados += int(partida[0])\n\t\tgols_sofridos += int(partida[2])\n\t\tif int(partida[0]) > int(partida[2]):\n\t\t\tvitorias += 1\n\t\t\tpontos_casa += 3\n\t\telif int(partida[0]) == int(partida[2]):\n\t\t\tempates += 1\n\t\t\tpontos_casa += 1\n\t\telse:\n\t\t\tderrotas += 1\n\t\t\n\telse:\n\t\tgols_marcados += int(partida[2])\n\t\tgols_sofridos += int(partida[0])\n\t\tif int(partida[2]) > int(partida[0]):\n\t\t\tvitorias += 1\n\t\t\tpontos_fora += 3\n\t\telif int(partida[2]) == int(partida[0]):\n\t\t\tempates += 1\n\t\t\tpontos_fora += 1\n\t\telse:\n\t\t\tderrotas += 1\n\npontos = (vitorias * 3) + empates\nsaldo = gols_marcados - gols_sofridos \n\nprint \"%dv, %de, %dd\" %(vitorias, empates, derrotas)\nprint \"pontos: %d\" % pontos\nprint \"saldo: %d (%d pro, %d contra)\" % (saldo, gols_marcados, gols_sofridos)\nprint \"pontos em casa: %d\" % pontos_casa\nprint \"pontos fora: %d\" % pontos_fora\n",
+      "name": "campanha.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6c0ad119852d50942913886af9c21567",
+  "iid": 5834762916724736,
+  "activity_revision": "1.0.1"
+}

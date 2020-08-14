@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nna_posicao = getattr(undertest, 'na_posicao', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     l = [10, 20, 30]\n     a_inserir = [(5, 1), (-2, 4), (0, 0)]\n     assert na_posicao(l, a_inserir) == None\n     assert l == [0, 10, 5, 20, 30, -2]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "insere.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Insere na Posi\u00e7\u00e3o Indicada\n\ndef na_posicao(lista, a_inserir):\n\tfor par in a_inserir:\n\t\tlista.append(par[0])\n\t\tfor i in range(len(lista) - 1, par[1], -1):\n\t\t\tlista[i], lista[i - 1] = lista[i - 1], lista[i]\n\t\n",
+      "name": "insere.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "73b56064071613bb2f1768bd1e113b96",
+  "iid": 5297903077687296,
+  "activity_revision": "1.0.1"
+}

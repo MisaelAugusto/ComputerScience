@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "abrantes\n123987695\ndalton\n98765437\nwilkerson\n98654300\n",
+      "output": "SPLab - Espaço utilizado pelos usuários\n---------------------------------------------\nNr., Usuário, Espaço Utilizado\n\n1, abrantes, 118.24 MB\n2, dalton, 94.19 MB\n3, wilkerson, 94.08 MB\n\nEspaço total ocupado: 306.52 MB\nEspaço médio ocupado: 102.17 MB\n"
+    }
+  ]
+}

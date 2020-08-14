@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agenda.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Agenda Ordenada\n\nnomes = []\nwhile True:\n\t nome = raw_input()\n\t if nome == \"####\":\n\t\t break\n\t else:\n\t\t nomes.append(nome)\n\t\t inicia = True\n\t\t n = len(nomes)\n\t\t while inicia and n > 1:\n\t\t\t inicia = False\n\t\t\t for i in range(len(nomes) - 1):\n\t\t\t\tif nomes[i][0] > nomes[i + 1][0]:\n\t\t\t\t\tnomes[i], nomes[i + 1] = nomes[i + 1], nomes[i]\n\t\t\t\t\tinicia = True\n\t\t\t\telif nomes[i][0] == nomes[i + 1][0]:\n\t\t\t\t\tx = 1\n\t\t\t\t\twhile x < len(nomes[i + 1]):\n\t\t\t\t\t\tif x < len(nomes[i]) and nomes[i][x] > nomes[i + 1][x]:\n\t\t\t\t\t\t\tnomes[i], nomes[i + 1] = nomes[i + 1], nomes[i]\n\t\t\t\t\t\t\tinicia = True\n\t\t\t\t\t\t\tbreak\n\t\t\t\t\t\tx += 1\n\t\t\t n -= 1\n\n\t\t for i in range(len(nomes)):\n\t\t\t if nomes[i] == nome:\n\t\t\t\t print \"* %s\" % nomes[i]\n\t\t\t else:\n\t\t\t\t print nomes[i]\n\t\t print \"----\"\n",
+      "name": "agenda.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d93ccd3a3d482e93ffde522d37907bcc",
+  "iid": 4949105763680256,
+  "activity_revision": "1.0.0"
+}

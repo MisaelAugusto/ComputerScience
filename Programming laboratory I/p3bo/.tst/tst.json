@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncolegas_de_sala = getattr(undertest, 'colegas_de_sala', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_example(self):\n\n        salasprofs = {\n            'Franklin': 206,    'Tiago':206,        'Eliane': 206,\n            'Adalberto':209,    'Wilkerson':207,    'Dalton': 204,\n            'Jorge': 204\n        }\n\n        assert set(colegas_de_sala(salasprofs, 'Franklin')) == set(['Tiago', 'Eliane'])\n        assert set(colegas_de_sala(salasprofs, 'Adalberto')) == set([])\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "colegas.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Colegas de Sala!\n\ndef colegas_de_sala(salasprofs, professor):\n\tlista = []\n\tfor prof in salasprofs:\n\t\tif prof != professor and salasprofs[prof] == salasprofs[professor]:\n\t\t\tlista.append(prof)\n\t\n\treturn lista\n",
+      "name": "colegas.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6d12b97a83cd560ab2f7b035bc6ace22",
+  "iid": 5828806669500416,
+  "activity_revision": "1.0.0"
+}

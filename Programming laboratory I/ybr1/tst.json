@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "output": "Nota 1: 10.0\nNota 2:  5.0\nMédia :  7.5\n",
+      "name": "exemplo"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "descarta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Descarta coincidente\n\nN = int(raw_input())\nnumeros = []\ndescartados = 0\naceitos = 0\ndescartados_lista = []\naceitos_lista = []\n\n\nfor i in range(N):\n\tnumeros.append(raw_input())\n\t\nfor n in numeros:\n\tciclos = 0\n\tfor i in range(len(n)):\t\n\t\tif int(n[i]) == i:\n\t\t\tdescartados += 1\n\t\t\tdescartados_lista.append(n)\n\t\t\tbreak\n\t\telse:\n\t\t\tciclos += 1\n\tif ciclos == len(n):\n\t\taceitos += 1\n\t\taceitos_lista.append(n)\nprint \"---\"\nprint \"%d aceito(s)\" % aceitos\nfor i in aceitos_lista:\n\tprint i\n\nprint \"%d descartado(s)\" % descartados\nfor i in descartados_lista:\n\tprint i\n",
+      "name": "descarta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7690d8524230c9d737f0430b97f27c8c",
+  "iid": 5282154841899008,
+  "activity_revision": "1.0.1"
+}

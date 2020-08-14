@@ -1,0 +1,14 @@
+{
+  "files": {
+    "analisa.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Analisa Chave\n\nchave = raw_input().lower()\nvogais = [\"a\", \"e\", \"i\", \"o\", \"u\"]\n\ninicia = True\nif len(chave) > 2:\t\n\tvogal = 0\n\tfor i in range(len(chave)):\n\t\tif (i < len(chave) - 2) and (chave[i] == chave[i + 1] == chave[i + 2]):\n\t\t\tprint \"Chave insegura. 3 caracteres consecutivos iguais.\"\n\t\t\tinicia = False\n\t\t\tbreak\n\t\t\n\t\tif chave[i] in vogais:\n\t\t\tvogal += 1\n\t\t\n\t\tif vogal > 5:\n\t\t\tprint \"Chave insegura. 6 vogais.\"\n\t\t\tinicia = False\n\t\t\tbreak\n\nif inicia:\n\tprint \"Chave segura!\"\t\t\t\n",
+      "name": "analisa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9d191875e034c52b4e83a74bc5af3839",
+  "iid": 6442211013033984,
+  "activity_revision": "2.0.0"
+}

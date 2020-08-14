@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4\nCampinense\n4\nSanta Cruz\n4\nNáutico\n3\nUniclinic\n0\n",
+      "type": "io",
+      "name": "test_do exemplo",
+      "output": "1. Campinense (4)\n1. Santa Cruz (4)\n3. Náutico (3)\n4. Uniclinic (0)\n"
+    }
+  ]
+}

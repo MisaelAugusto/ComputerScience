@@ -1,0 +1,18 @@
+{
+  "files": {
+    "pfpf.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Plif Plof\n\nnum1 = int(raw_input())\nnum2 = int(raw_input())\nnum3 = int(raw_input())\n\ntotal = num1 + num2 + num3\n\nif total % 3 == 0:\n\tif total % 5 == 0:\n\t\tprint \"plifplof\"\n\telse:\n\t\tprint \"plif\"\nelse:\n\tif total % 5 == 0:\n\t\tprint \"plof\"\n\telse:\n\t\tprint total\n",
+      "name": "pfpf.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 137.61,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4a5cb6508373202e774173f3f2ed872d",
+  "iid": 6194687484362752,
+  "activity_revision": "1.1.2"
+}

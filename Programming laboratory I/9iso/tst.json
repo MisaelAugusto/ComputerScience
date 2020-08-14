@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "0.0\n1.3\n6.0\n2.5\n",
+      "output": "Posição inicial? Velocidade inicial? Tempo? Aceleração? \nDados da questão\n================\n   Posição inicial: 0.00 m\nVelocidade inicial: 1.30 m/s\n        Aceleração: 2.50 m/s2\n             Tempo: 6.00 s\n  Velocidade final: 16.30 m/s\n  Velocidade média: 8.80 m/s\n     Posição final: 52.80 m\n"
+    }
+  ]
+}

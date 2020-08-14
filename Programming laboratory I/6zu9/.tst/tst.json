@@ -1,0 +1,18 @@
+{
+  "files": {
+    "alvo1.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Tiro ao alvo\n\ntotal = 0\ndisparos = 0\nwhile True:\n\tposicao = raw_input().split(\",\")\n\tdist = (float(posicao[0]) ** 2 + float(posicao[1]) ** 2) ** (0.5)\n\tif dist > 200:\n\t\tbreak\n\telse:\n\t\tdisparos += 1\n\t\ttotal += dist\n\t\tprint \"%.2f\" % dist\n\t\nmedia = total / disparos\n\t\nprint \"--\"\nprint \"num disparos: %d\" % disparos\nprint \"distancia media: %.2f\" % media\n\t\n",
+      "name": "alvo1.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 112.59,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f9dce500e2c673e243c368c63445d9f7",
+  "iid": 5232167462371328,
+  "activity_revision": "1.0.3"
+}

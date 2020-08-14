@@ -1,0 +1,18 @@
+{
+  "files": {
+    "criptografando.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Criptografando uma Senha\n\npalavra = list(raw_input())\n\ntrocas = 0\nfor i in range(1, len(palavra)):\n\tletra = palavra[i]\n\tif letra == \"a\" or letra == \"A\":\n\t\ttrocas += 1\n\t\tpalavra.append(\"4\")\n\t\tfor i in range(len(palavra) - 1, i, -1):\n\t\t\tpalavra[i], palavra[i - 1] = palavra[i - 1], palavra[i]\n\t\tfor j in range(i, len(palavra) - 1):\n\t\t\tpalavra[j], palavra[j + 1] = palavra[j + 1], palavra[j]\n\t\tpalavra.pop()\n\telif letra == \"e\" or letra == \"E\":\n\t\ttrocas += 1\n\t\tpalavra.append(\"3\")\n\t\tfor i in range(len(palavra) - 1, i, -1):\n\t\t\tpalavra[i], palavra[i - 1] = palavra[i - 1], palavra[i]\n\t\tfor j in range(i, len(palavra) - 1):\n\t\t\tpalavra[j], palavra[j + 1] = palavra[j + 1], palavra[j]\n\t\tpalavra.pop()\n\telif letra == \"i\" or letra == \"I\":\n\t\ttrocas += 1\n\t\tpalavra.append(\"1\")\n\t\tfor i in range(len(palavra) - 1, i, -1):\n\t\t\tpalavra[i], palavra[i - 1] = palavra[i - 1], palavra[i]\n\t\tfor j in range(i, len(palavra) - 1):\n\t\t\tpalavra[j], palavra[j + 1] = palavra[j + 1], palavra[j]\n\t\tpalavra.pop()\n\telif letra == \"o\" or letra == \"O\":\n\t\ttrocas += 1\n\t\tpalavra.append(\"0\")\n\t\tfor i in range(len(palavra) - 1, i, -1):\n\t\t\tpalavra[i], palavra[i - 1] = palavra[i - 1], palavra[i]\n\t\tfor j in range(i, len(palavra) - 1):\n\t\t\tpalavra[j], palavra[j + 1] = palavra[j + 1], palavra[j]\n\t\tpalavra.pop()\npalavra = \"\".join(palavra)\nprint \"%s (%d troca(s))\" % (palavra, trocas)\n",
+      "name": "criptografando.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 230.75,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "51a56298cca8d9629015b3b8b46a11e0",
+  "iid": 5277794779004928,
+  "activity_revision": "1.1.1"
+}

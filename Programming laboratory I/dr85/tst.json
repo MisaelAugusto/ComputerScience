@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "220\n",
+      "output": "Serão necessárias 0 página(s) para visualizar os tweets.\n100.0% dos tweets serão perdidos.\n"
+    },
+    {
+      "category": "public",
+      "input": "440\n",
+      "output": "Serão necessárias 1 página(s) para visualizar os tweets.\n9.1% dos tweets serão perdidos.\n"
+    }
+  ]
+}

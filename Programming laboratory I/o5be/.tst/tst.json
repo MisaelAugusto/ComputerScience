@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nencontra_email_perdido = getattr(undertest, 'encontra_email_perdido', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['oi', 'ola', 'paguei']\n        l2 = ['ola', 'paguei']\n        assert encontra_email_perdido(l1,l2) == 'oi'\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "email.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Email Perdido\n\ndef encontra_email_perdido(emails_enviados, emails_recebidos):\n\tfor emaile in emails_enviados:\n\t\tn = 0\n\t\tfor email in emails_recebidos:\n\t\t\tif emaile == email:\n\t\t\t\tbreak\n\t\t\telse:\n\t\t\t\tn += 1\n\t\t\t\t\n\t\tif n == len(emails_recebidos):\n\t\t\treturn emaile\n",
+      "name": "email.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3203fda4fed8615c9da86c82146c471f",
+  "iid": 5314623519588352,
+  "activity_revision": "1.1.1"
+}

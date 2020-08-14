@@ -1,0 +1,14 @@
+{
+  "files": {
+    "cal_medias.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Calculadora de M\u00e9dias\n\ndef MA(lista):\n\ttotal = 0\n\tfor numero in lista:\n\t\ttotal += float(numero)\n\tmedia = total / len(lista)\n\t\n\treturn \"M\u00e9dia Aritm\u00e9tica: %.4f\" % media\n\ndef MG(lista):\n\ttotal = 1\n\tfor numero in lista:\n\t\ttotal *= float(numero)\n\tmedia = total ** (1.0 / len(lista))\n\t\n\treturn \"M\u00e9dia Geom\u00e9trica: %.4f\" % media\n\ndef MH(lista):\n\ttotal = 0.0\n\tfor numero in lista:\n\t\ttotal += 1 / float(numero)\n\tmedia = len(lista) / total\n\t\n\treturn \"M\u00e9dia Harm\u00f4nica: %.4f\" % media\n\t\nwhile True:\n\toperacoes = raw_input().split()\n\tif operacoes[0] == \"Q\":\n\t\tbreak\n\telse:\n\t\tnumeros = raw_input().split()\n\t\tfor operacao in operacoes:\n\t\t\tif operacao == \"MA\":\n\t\t\t\tprint MA(numeros)\n\t\t\telif operacao == \"MG\":\n\t\t\t\tprint MG(numeros)\n\t\t\telse:\n\t\t\t\tprint MH(numeros)\n\t\tprint \"----\"\n",
+      "name": "cal_medias.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6c1f4be83a34e5ef6e3f1af5ef6178ac",
+  "iid": 5846675478282240,
+  "activity_revision": "1.0.1"
+}

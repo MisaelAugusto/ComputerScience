@@ -1,0 +1,18 @@
+{
+  "files": {
+    "soma_divisores.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Soma os Divisores do Primeiro Elemento de uma Lista\n\nn1 = int(raw_input())\nn2 = int(raw_input())\nn3 = int(raw_input())\nn4 = int(raw_input())\nn5 = int(raw_input())\nn6 = int(raw_input())\nn7 = int(raw_input())\nn8 = int(raw_input())\nn9 = int(raw_input())\nn10 = int(raw_input())\nn11 = int(raw_input())\n\nlista = [n2, n3, n4, n5, n6, n7, n8, n9, n10, n11]\nfor i in lista:\n\tif n1 % i == 0:\n\t\tprint i\n",
+      "name": "soma_divisores.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2f24c0848f574503ff951c51d1b4b03b",
+  "iid": 6485158806945792,
+  "activity_revision": "1.0.5"
+}

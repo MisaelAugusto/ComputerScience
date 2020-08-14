@@ -1,0 +1,18 @@
+{
+  "files": {
+    "negativos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Negativos no fim\n\ndef negativos_no_fim(lista):\n\tn = len(lista) - 1\n\tfor i in range(len(lista) - 1, -1, -1):\n\t\tif lista[i] < 0:\n\t\t\tlista[i], lista[n] = lista[n], lista[i]\n\t\t\tn -= 1\n",
+      "name": "negativos.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nnegativos_no_fim = getattr(undertest, 'negativos_no_fim', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        fila = [12, -21, -35, 8, 12, 15]\n        assert negativos_no_fim(fila) == None\n        assert fila == [12, 12, 15, 8, -21, -35]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a74ff8790cc5ce0ff205364d3c348a2c",
+  "iid": 5881492362231808,
+  "activity_revision": "1.0.0"
+}

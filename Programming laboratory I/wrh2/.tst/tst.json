@@ -1,0 +1,18 @@
+{
+  "files": {
+    "variacao_salario.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: An\u00e1lise de Varia\u00e7\u00e3o do Sal\u00e1rio M\u00ednimo\n\nano_inicial = int(raw_input())\nano_final = int(raw_input()) + 1\n\nacima = 0\nabaixo = 0\nsalarios_acima = []\nsalarios_abaixo = []\ntotal1 = 0\ntotal2 = 0\nfor i in range(ano_final - ano_inicial):\n\tsalario = float(raw_input())\n\tif salario > 100:\n\t\tacima += 1\n\t\tsalarios_acima.append(salario)\n\t\ttotal1 += salario\n\tif salario < 100:\n\t\tabaixo += 1\n\t\tsalarios_abaixo.append(salario)\n\t\ttotal2 += salario\n\nporcentagem_abaixo = abaixo * 100 / (ano_final - ano_inicial)\nprint \"%d ano(s) abaixo (%d%% dos anos)\" % (abaixo, porcentagem_abaixo)\nif total2 != 0:\n\tprint \"m\u00e9dia dos anos abaixo: U$ %.2f\" % (total2 / len(salarios_abaixo))\n\nporcentagem_acima = 100 - porcentagem_abaixo\nprint \"%d ano(s) acima (%d%% dos anos)\"\t% (acima, porcentagem_acima)\nif total1 != 0:\n\tprint \"m\u00e9dia dos anos acima: U$ %.2f\" % (total1 / len(salarios_acima))\n\n",
+      "name": "variacao_salario.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 20,\n      \"vhalstead\": 250.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a958059764210cec1e9c8430b40ebed7",
+  "iid": 6356851893469184,
+  "activity_revision": "1.1.2"
+}

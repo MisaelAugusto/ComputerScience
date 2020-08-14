@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "10000\n8000\n176000\n",
+      "name": "exemplo",
+      "output": "2.50\n2.00\n44.00\n16.17\n"
+    },
+    {
+      "category": "public",
+      "input": "7643.23\n342345\n3432     \n",
+      "name": "exemplo2",
+      "output": "1.91\n85.59\n0.86\n29.45\n"
+    }
+  ]
+}

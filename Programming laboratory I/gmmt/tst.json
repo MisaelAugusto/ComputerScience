@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4 1 5 7\n8 7 6 3\n0\n6\n5\n1\n4\n6\n7\n",
+      "type": "io",
+      "name": "test_exemplo",
+      "output": "Bingo! Jogador 1 venceu.\n"
+    },
+    {
+      "category": "public",
+      "input": "1 2 3 4\n1 2 3 4\n1\n2\n3\n4\n",
+      "type": "io",
+      "name": "outro_exemplo",
+      "output": "Empate.\n"
+    }
+  ]
+}

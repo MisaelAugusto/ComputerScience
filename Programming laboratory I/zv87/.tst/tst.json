@@ -1,0 +1,14 @@
+{
+  "files": {
+    "passagem.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\npassagem = float(raw_input())\naliquota = float(raw_input())\nvalor_passagem = passagem * aliquota + 51.00\nprint \"Valor da passagem: R$ %.2f\" %valor_passagem\nprint \"\"\nprint \"Pagamento:\"\nprint \"1. \u00c0 vista. R$ %.2f\" %(valor_passagem*0.75)\nprint \"2. Em 6 parcelas. Total: R$ %.2f\\n   6 x R$ %.2f\" %(valor_passagem*0.95, (valor_passagem*0.95)/6)\nprint \"3. Em 10 parcelas. Total: R$ %.2f\\n   10 x R$ %.2f\" %(valor_passagem, valor_passagem/10)\n",
+      "name": "passagem.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3e2218a45a813081563506cafd0e62ec",
+  "iid": 6744582079381504,
+  "activity_revision": "1.1.0"
+}

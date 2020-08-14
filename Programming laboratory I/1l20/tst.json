@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Carlos\n",
+      "name": "exemplo",
+      "output": "Oi Carlos\n"
+    },
+    {
+      "category": "public",
+      "input": "Carlos\n",
+      "output": "Oi Carlos\n"
+    }
+  ]
+}

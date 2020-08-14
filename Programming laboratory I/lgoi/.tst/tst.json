@@ -1,0 +1,18 @@
+{
+  "files": {
+    "calcula.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Calcula DV\n\nnumero = raw_input()\nsoma_par = 0\nsoma_impar = 0\n\nfor i in range(len(numero)):\n\tif i % 2 == 0:\n\t\tsoma_par += int(numero[i])\n\telse:\n\t\tsoma_impar += int(numero[i])\n\ntotal = (soma_par * soma_impar) % 11\nif total == 10:\n\tprint \"%s-X\" % numero\nelse:\n\tprint \"%s-%d\" % (numero, total)\n",
+      "name": "calcula.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 11,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "75e2bfdf882bb1742f657776155699e4",
+  "iid": 5895224379310080,
+  "activity_revision": "1.1.2"
+}

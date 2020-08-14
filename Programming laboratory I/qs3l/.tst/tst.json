@@ -1,0 +1,14 @@
+{
+  "files": {
+    "areaevolume.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nimport math\n\nraio = float(raw_input())\nvolume = (4.0/3) * math.pi * raio**3\n\nprint \"%.2f\" %volume\n",
+      "name": "areaevolume.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1aee2c4421ecbb17efb23f304b04b744",
+  "iid": 5896003915874304,
+  "activity_revision": "1.0.0"
+}

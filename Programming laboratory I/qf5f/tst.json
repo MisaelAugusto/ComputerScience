@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "MA\n6 2 7 9\nMG\n4 6 9\nMH\n2 6 8\nQ\n",
+      "output": "Média Aritmética: 6.0000\n----\nMédia Geométrica: 6.0000\n----\nMédia Harmônica: 3.7895\n----\n"
+    },
+    {
+      "category": "public",
+      "input": "MG MA\n1.2 1.12 1.07\nMH MG\n2 6 8\nQ\n",
+      "output": "Média Geométrica: 1.1287\nMédia Aritmética: 1.1300\n----\nMédia Harmônica: 3.7895\nMédia Geométrica: 4.5789\n----\n"
+    }
+  ]
+}

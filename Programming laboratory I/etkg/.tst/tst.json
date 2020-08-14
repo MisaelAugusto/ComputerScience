@@ -1,0 +1,14 @@
+{
+  "files": {
+    "percentualreajuste.py": {
+      "category": "answer",
+      "data": "salario_atual = float(raw_input(\"Valor atual? \"))\nsalario_novo = float(raw_input(\"Novo valor? \"))\n\nreajuste = (salario_novo - salario_atual) / salario_atual * 100\n\nprint \"Reajuste de %.1f%%\" %reajuste\n",
+      "name": "percentualreajuste.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0ccc706b58e1c82870d8419e554af354",
+  "iid": 5830686590107648,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "DNA.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: DNA\n\ndna1 = raw_input()\ndna2 = raw_input()\ndna3 = raw_input()\n\ntamanho1 = len(dna1)\ntamanho2 = len(dna2)\ntamanho3 = len(dna3)\n\nif tamanho2 < tamanho1 and tamanho2 < tamanho3:\n\tprint \"%s %i\" % (dna2, tamanho2)\nelif tamanho3 < tamanho2 and tamanho3 < tamanho1:\n\tprint \"%s %i\" % (dna3, tamanho3)\nelse:\n\tprint \"%s %i\" % (dna1, tamanho1)\n",
+      "name": "DNA.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "95c3ead05329aac6fc00ff0e425e5f9d",
+  "iid": 5112966953304064,
+  "activity_revision": "1.1.3"
+}

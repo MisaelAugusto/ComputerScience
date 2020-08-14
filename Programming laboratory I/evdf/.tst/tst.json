@@ -1,0 +1,14 @@
+{
+  "files": {
+    "resumopassagem.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nidentificador = raw_input()\nhorario = raw_input()\nassento = raw_input()\nportao = raw_input()\npreco_sem_imposto = float(raw_input())\npreco_total = float(raw_input())\nporcentagem_de_imposto = (preco_total - preco_sem_imposto) / preco_total * 100\nprint '### Cart\u00e3o de Embarque ###'\nprint 'Identificador do voo: %s. Hor\u00e1rio: %s. Assento: %s. Port\u00e3o: %s.' % (identificador,horario,assento,portao)\nprint 'Total de Imposto: %.1f%%.' % (porcentagem_de_imposto)\n",
+      "name": "resumopassagem.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3133fbf0ca6b6c80bd457c0e563ba8ce",
+  "iid": 5251959611195392,
+  "activity_revision": "1.1.8"
+}

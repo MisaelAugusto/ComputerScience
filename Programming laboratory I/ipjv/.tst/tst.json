@@ -1,0 +1,14 @@
+{
+  "files": {
+    "limite.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Limite a\u00e7ude\n\nlimite = float(raw_input())\nnivel_atual = float(raw_input())\n\nwhile nivel_atual < limite:\n\toperacao = raw_input().split()\n\tif operacao[0] == \"chuva\" or operacao[0] == \"afluente\":\n\t\tnivel_atual += float(operacao[1])\n\telse:\n\t\tif (nivel_atual - float(operacao[1])) < 0:\n\t\t\tcontinue\n\t\telse:\n\t\t\tnivel_atual -= float(operacao[1])\n\nprint \"A\u00e7ude passou a liberar \u00e1gua.\"\nprint \"N\u00edvel: %.2f\" % nivel_atual\n",
+      "name": "limite.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f0c1aec5090291f4a3b2409b68144c49",
+  "iid": 5773423133327360,
+  "activity_revision": "1.0.1"
+}

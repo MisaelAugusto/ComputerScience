@@ -1,0 +1,18 @@
+{
+  "files": {
+    "aula_medias.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Aula de m\u00e9dias\n\nsoma = 0\nnum_lidos = 0\nnumeros = []\nwhile soma < 100:\n\tnumero = float(raw_input())\n\tnum_lidos += 1\n\tsoma += numero\n\tnumeros.append(numero)\n\t\nmedia = soma / num_lidos\n\nprint \"Quantidade de n\u00fameros lidos: %d\" % num_lidos\nprint \"Soma dos n\u00fameros lidos: %.2f\" % soma\nprint \"M\u00e9dia = %.2f\" % media\nprint \"\"\nprint \"Abaixo da m\u00e9dia\"\nfor i in range(len(numeros)):\n\tif numeros[i] < media:\n\t\tprint \"%.2f (%do)\" % (numeros[i], i + 1)\nprint \"\"\nprint \"Acima da m\u00e9dia\"\nfor i in range(len(numeros)):\n\tif numeros[i] > media:\n\t\tprint \"%.2f (%do)\" % (numeros[i], i + 1)\n",
+      "name": "aula_medias.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 21,\n      \"vhalstead\": 160.54,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "104ea832447f808151e520b68fe53ca7",
+  "iid": 5556046114324480,
+  "activity_revision": "1.0.2"
+}

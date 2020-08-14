@@ -1,0 +1,18 @@
+{
+  "files": {
+    "sequencia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Sequencia de DNA\n\nsequencia1 = raw_input()\nsequencia2 = raw_input()\n\nsim = 0\nfor i in range(len(sequencia1)):\n\tif sequencia1[i] == sequencia2[i]:\n\t\tsim += 1\n\nif sim > (len(sequencia1) / 2.0):\n\tprint \"sim\"\nelse:\n\tprint \"nao\"\t\t\n",
+      "name": "sequencia.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 1,\n      \"lloc\": 10,\n      \"vhalstead\": 41.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2c774a164fe0bb31e8dd19f667c58ccf",
+  "iid": 5275287323410432,
+  "activity_revision": "1.0.1"
+}

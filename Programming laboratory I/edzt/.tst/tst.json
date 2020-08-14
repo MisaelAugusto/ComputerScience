@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nacordes = getattr(undertest, 'acordes', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        m1 = ['c', 'd', 'dm']\n        m2 = ['c', 'a']\n        \n        assert acordes(m1, m2) == ['c', 'd', 'dm', 'a']\n        assert m1 == ['c', 'd', 'dm']\n        assert m2 == ['c', 'a']\n        \n        m1 = ['c', 'd']\n        m2 = ['c', 'a']\n        assert acordes(m1, m2) == ['c', 'd', 'a']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "acordes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Acordes aprendidos\n\ndef acordes(musica_1, musica_2):\n\tacordes = []\n\tfor acorde in musica_1:\n\t\tacordes.append(acorde)\n\n\tfor m in musica_2:\n\t\tn = 0\n\t\tfor acorde in acordes:\n\t\t\tif m != acorde:\n\t\t\t\tn += 1\n\t\tif n == len(acordes):\n\t\t\tacordes.append(m)\t\t\n\t\n\treturn acordes\n\nprint acordes([\"c\", \"d\", \"dm\"], [\"c\", \"a\"])\n",
+      "name": "acordes.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8df4f701c10b31b8b86e748fc2ef0205",
+  "iid": 6386720236896256,
+  "activity_revision": "1.0.0"
+}

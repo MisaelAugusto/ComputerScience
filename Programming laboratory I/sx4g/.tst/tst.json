@@ -1,0 +1,14 @@
+{
+  "files": {
+    "aposta.py": {
+      "category": "answer",
+      "data": "num1 = int(raw_input())\nnum2 = int(raw_input())\nnum3 = int(raw_input())\nif num1 > 10:\n\tnum1 = num1%11\nif num2 > 10:\n\tnum2 = num2%11\nif num3 > 10:\n\tnum3 = num3%11\nprint \"%02.i-%02.i-%02.i\" %(num1, num2, num3)\n\n\t\t\n\n",
+      "name": "aposta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "be5a680146254b3bae6461b98b063347",
+  "iid": 4986261659975680,
+  "activity_revision": "1.0.0"
+}

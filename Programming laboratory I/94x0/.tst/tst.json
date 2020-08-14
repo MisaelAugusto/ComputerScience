@@ -1,0 +1,14 @@
+{
+  "files": {
+    "espaco.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nusuario1 = raw_input()\nespaco1 = float(raw_input())\nespaco1 = espaco1 / (1024**2)\n\nusuario2 = raw_input()\nespaco2 = float(raw_input())\nespaco2 = espaco2 / (1024**2)\n\nusuario3 = raw_input()\nespaco3 = float(raw_input())\nespaco3 = espaco3 / (1024**2)\n\nprint \"SPLab - Espa\u00e7o utilizado pelos usu\u00e1rios\"\nprint \"---------------------------------------------\"\nprint \"Nr., Usu\u00e1rio, Espa\u00e7o Utilizado\"\nprint \"\" \nprint \"1, %s, %.2f MB\" %(usuario1, espaco1)\nprint \"2, %s, %.2f MB\" %(usuario2, espaco2)\nprint \"3, %s, %.2f MB\" %(usuario3, espaco3)\nprint \"\"\nespaco_total = espaco1 + espaco2 + espaco3\nprint \"Espa\u00e7o total ocupado: %.2f MB\" % espaco_total\nespaco_medio = (espaco1 + espaco2 + espaco3) / 3.0\nprint \"Espa\u00e7o m\u00e9dio ocupado: %.2f MB\" % espaco_medio\n",
+      "name": "espaco.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4e5984888590924fbca747480c5aca4d",
+  "iid": 6301346286272512,
+  "activity_revision": "1.1.0"
+}

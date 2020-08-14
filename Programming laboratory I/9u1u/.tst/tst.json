@@ -1,0 +1,19 @@
+{
+  "files": {
+    "resolve.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Resolve Vizinhos\n\ndef resolve_vizinhos(lista):\n\tfor i in range(len(lista) - 1):\n\t\tif lista[i] == lista[i + 1]:\n\t\t\tlista[i] += 1\n\t\t\tif lista[i] == lista[i - 1]:\n\t\t\t\tlista[i] += 1\n\t\t\t\n\treturn lista\n\nprint resolve_vizinhos([1, 2, 5, 5, 8, 4])\nprint resolve_vizinhos([])\nprint resolve_vizinhos([1, 1, 1])\n",
+      "name": "resolve.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nresolve_vizinhos = getattr(undertest, 'resolve_vizinhos', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n        seq = [6,2,4,4,9,1,0]\n        resolve_vizinhos(seq)\n        assert seq == [6,2,5,4,9,1,0]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "61557b4b9cd14466c90c45373d5c60cd",
+  "iid": 6540307059441664,
+  "activity_revision": "1.0.0"
+}

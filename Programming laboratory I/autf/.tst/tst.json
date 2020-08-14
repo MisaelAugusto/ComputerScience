@@ -1,0 +1,14 @@
+{
+  "files": {
+    "camposdefutebol.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\narea1 = float(raw_input())\narea2 = float(raw_input())\narea3 = float(raw_input())\n\ncampos1 = area1 / 4000\ncampos2 = area2 / 4000\ncampos3 = area3 / 4000\n\nmedia =  (campos1 + campos2 + campos3) / 3\n\nprint \"%.2f\" %campos1\nprint \"%.2f\" %campos2\nprint \"%.2f\" %campos3\nprint \"%.2f\" %media\n\n",
+      "name": "camposdefutebol.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0b6e5ef7d4cb9ebf4e70843a03aaa12b",
+  "iid": 6355663663923200,
+  "activity_revision": "1.0.1"
+}

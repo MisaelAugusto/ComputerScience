@@ -1,0 +1,14 @@
+{
+  "files": {
+    "aprovados.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# ALuno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Aprovados no ENEM\n\nalunos = []\nnotas = []\nwhile True:\n\taluno_nota = raw_input().split()\n\tif aluno_nota[0] == \"fim\":\n\t\tnota_corte = int(raw_input())\n\t\tbreak\n\telse:\n\t\talunos.append(aluno_nota[0])\n\t\tnotas.append(int(aluno_nota[1]))\n\nreprovados = 0\nfor i in range(len(alunos)):\n\tif notas[i] >= nota_corte:\n\t\tprint \"%s, %d\" % (alunos[i], notas[i])\n\telse:\n\t\treprovados += 1\n\t\tif reprovados == len(alunos):\n\t\t\tprint \"Nenhum candidato aprovado.\"\n\t\t\tbreak\n",
+      "name": "aprovados.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "219222eb0226e77686a8287921344b06",
+  "iid": 5778809156534272,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nis_substring = getattr(undertest, 'is_substring', None)\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_1(self):\n        assert is_substring('boiada','oi')\n        assert not is_substring('casorio', 'casa')\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "verificando.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Verificando se uma String \u00e9 Substring de Outra String\n\ndef is_substring(str1, str2):\n\ttamanho = len(str2)\n\tfor i in range(len(str1) - tamanho + 1):\n\t\ts = \"\"\n\t\tfor j in range(tamanho):\n\t\t\ts += str1[i + j]\n\t\tif s == str2:\n\t\t\treturn True\n\t\n\treturn False\n\nprint is_substring(\"baaadoi\", \"oi\")\n\t\t\n",
+      "name": "verificando.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "39dd638da10cf136f2a9ae46c0df7ae5",
+  "iid": 5339546677936128,
+  "activity_revision": "1.0.0"
+}

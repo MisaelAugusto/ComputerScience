@@ -1,0 +1,14 @@
+{
+  "files": {
+    "nome3v.py": {
+      "category": "answer",
+      "data": "nome = raw_input()\nprint nome\nprint nome\nprint nome\n",
+      "name": "nome3v.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4af1875794b6b13c70a79f569aa803fa",
+  "iid": 6477192884125696,
+  "activity_revision": "1.2.0"
+}

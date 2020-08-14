@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "orfeu\n",
+      "output": "sim\n"
+    },
+    {
+      "category": "public",
+      "input": "brasil\n",
+      "output": "nao\n"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "bingo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Bingo\n\ncartela1 = raw_input().split()\ncartela2 = raw_input().split()\n\npontos1 = 0\npontos2 = 0\nwhile True:\n\tnumero = int(raw_input())\n\tfor i in range(len(cartela1)):\n\t\tif int(cartela1[i]) == numero:\n\t\t\tpontos1 += 1\n\t\tif int(cartela2[i]) == numero:\n\t\t\tpontos2 += 1\n\tif pontos1 == len(cartela1) or pontos2 == len(cartela2):\n\t\tif pontos1 > pontos2:\n\t\t\tprint \"Bingo! Jogador 1 venceu.\"\n\t\telif pontos1 < pontos2:\n\t\t\tprint \"Bingo! Jogador 2 venceu.\"\n\t\telse:\n\t\t\tprint \"Empate.\"\n\t\tbreak\n",
+      "name": "bingo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "271b8867713c4a821b29d9bd0495baeb",
+  "iid": 4618548102037504,
+  "activity_revision": "1.0.1"
+}

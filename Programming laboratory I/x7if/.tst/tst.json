@@ -1,0 +1,18 @@
+{
+  "files": {
+    "torcida.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Maior Torcida\n\ntorcida1 = 0\ntorcida2 = 0\n\nfor i in range(10):\n\ttorcida = int(raw_input())\n\tif i <= 4:\n\t\ttorcida1 += torcida\n\telse:\n\t\ttorcida2 += torcida\n\t\t\nif torcida1 > torcida2:\n\tprint \"O primeiro time leva mais torcedores ao est\u00e1dio.\"\nelif torcida2 > torcida1:\n\tprint \"O segundo time leva mais torcedores ao est\u00e1dio.\"\nelse:\n\tprint \"Empate.\"\n",
+      "name": "torcida.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 31.02,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "63e5e055e7de40fe8332bbd69c6875f4",
+  "iid": 5830243268952064,
+  "activity_revision": "1.0.2"
+}

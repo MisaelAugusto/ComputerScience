@@ -1,0 +1,14 @@
+{
+  "files": {
+    "pares.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Pares de M\u00faltiplos\n\nnumeros = raw_input().split()\nfator = float(raw_input())\n\npar = 0\npares = []\nfor i in range(len(numeros) - 1):\n\tnumero = int(numeros[i]) * fator\n\tnumero2 = int(numeros[i + 1]) * fator\n\tif numero == int(numeros[i + 1]) or numero2 == int(numeros[i]):\n\t\tpar += 1\n\t\tpares += [numeros[i], numeros[i + 1]]\n\t\t\nprint \"%d par(es)\" % par\n\nfor i in range(0, len(pares) - 1, 2):\n\tprint \"%s %s\" % (pares[i], pares[i + 1])\n",
+      "name": "pares.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c3e685cd7d5baccb27cb40eb47200b44",
+  "iid": 5811013223972864,
+  "activity_revision": "1.0.1"
+}

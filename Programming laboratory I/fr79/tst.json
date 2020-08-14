@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Wilkerson 100.00\n1 50.00\n2 20.00\n3\n",
+      "output": "Saldo de R$ 70.00 na conta de Wilkerson\n"
+    },
+    {
+      "category": "public",
+      "input": "Matheus 20.00\n1 100.00\n3\n",
+      "output": "Saldo de R$ -80.00 na conta de Matheus\n"
+    }
+  ]
+}

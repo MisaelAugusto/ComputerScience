@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "30\n",
+      "output": "Quadrante 1\n"
+    },
+    {
+      "category": "public",
+      "input": "270\n",
+      "output": "Sobre eixos\n"
+    },
+    {
+      "category": "public",
+      "input": "400\n",
+      "output": "Quadrante 1\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "conversao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: COnvers\u00e3o de N\u00famero na Base 2 para a Base 10\n\nnumero = raw_input()\n\ndecimal = 0\nfor i in range(len(numero)):\n\tpotencia = 2 ** (len(numero) - 1 - i)\n\tnum_dec = int(numero[i]) * potencia\n\tprint \"%s * %d = %d\" % (numero[i], potencia, num_dec)\n\tdecimal += num_dec\nprint \"%s(2) = %d(10)\" % (numero, decimal)\n\n\n\t\n",
+      "name": "conversao.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "af93ee99109ddb7d014afcf63c56cb4a",
+  "iid": 5818306481094656,
+  "activity_revision": "1.0.4"
+}

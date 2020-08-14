@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Jorge\n2\n4\n8\n1\n10\n*\nKlaudio\n*\nJoão\n3\n1\n2\n*\nDalton\n1\n1\n1\n1\n5\n6\n*\n**\n",
+      "output": "Relatório de novas questões:\n\nJorge: 25\nKlaudio: 0\nJoão: 6\nDalton: 15\n---\nTotal de novas questões: 46\n"
+    }
+  ]
+}

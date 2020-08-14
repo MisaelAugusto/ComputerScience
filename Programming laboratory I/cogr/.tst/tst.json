@@ -1,0 +1,18 @@
+{
+  "files": {
+    "transporte.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Transporte Modificado\n\npessoas = int(raw_input())\nvalor_disponivel = float(raw_input())\n\npassagem_tav = 100 * pessoas\npassagem_onibus = 22 * pessoas\nif pessoas <= 4:\n\tpassagem_taxi = 200\nelse:\n\tif pessoas % 4 > 0:\n\t\tpassagem_taxi = 200 + 200 * (pessoas/4)\n\telse:\n\t\tpassagem_taxi = 200 * (pessoas/4)\nif valor_disponivel < passagem_onibus:\n\tprint \"N\u00e3o \u00e9 poss\u00edvel realizar a viagem.\"\nelse:\n\tif valor_disponivel >= passagem_tav:\n\t\tprint \"TAV. R$ %.2f\" %passagem_tav\n\telif valor_disponivel >= passagem_taxi:\n\t\tprint \"T\u00e1xi. R$ %.2f\" %passagem_taxi\n\telif valor_disponivel >= passagem_onibus:\n\t\tprint \"\u00d4nibus. R$ %.2f\" %passagem_onibus\n\t\n\n\n",
+      "name": "transporte.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 122.62,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7af6527f6ac72c6d256f2c5736fb21cf",
+  "iid": 4945883867119616,
+  "activity_revision": "1.0.2"
+}

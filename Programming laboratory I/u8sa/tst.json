@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "mouse\ncasa\nexemplo\n",
+      "output": "3\n"
+    }
+  ]
+}

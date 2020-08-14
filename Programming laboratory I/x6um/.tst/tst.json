@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsoma_intervalo = getattr(undertest, 'soma_intervalo', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico_1(self):\n       assert soma_intervalo(10,10) == 10\n\n   def test_basico_2(self):\n       assert soma_intervalo(5,15) == 110\n\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "soma_intervalo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Soma Intervalo\n\ndef soma_intervalo(a, b):\n\tsoma = a\n\tn = 1\n\tfor i in range(b - a):\n\t\tsoma += a + n\n\t\tn += 1\n\treturn soma\n\t\nprint soma_intervalo(5, 15)\n",
+      "name": "soma_intervalo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7f1e9131114e4b375b6b2de1d6fe5a19",
+  "iid": 6051724531859456,
+  "activity_revision": "1.0.1"
+}

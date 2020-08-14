@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "100.0\n70\nchuva 70\n",
+      "type": "io",
+      "name": "test1",
+      "output": "Açude passou a liberar água.\nNível: 140.00\n"
+    },
+    {
+      "category": "public",
+      "input": "100\n50\ndemanda 50\ndemanda 50\nafluente 190\n",
+      "type": "io",
+      "name": "test2",
+      "output": "Açude passou a liberar água.\nNível: 190.00\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "guerra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Guerra Baralho\n\nvitoria1 = 0\nvitoria2 = 0\nempate = 0\nwhile True:\n\tnumeros = raw_input().split()\n\tif numeros == [\"0\", \"0\"]:\n\t\tbreak\n\telse:\n\t\tif int(numeros[0]) > int(numeros[1]):\n\t\t\tvitoria1 += 1\n\t\telif int(numeros[0]) < int(numeros[1]):\n\t\t\tvitoria2 += 1\n\t\telse:\n\t\t\tempate += 1\n\nprint \"Jogador 1: %d, Jogador 2: %d, Empates: %d\" % (vitoria1, vitoria2, empate)\n",
+      "name": "guerra.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 2,\n      \"lloc\": 13,\n      \"vhalstead\": 82.04,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1bc3ecce4230d6c34d4013e5bc383048",
+  "iid": 6124086946168832,
+  "activity_revision": "1.0.1"
+}

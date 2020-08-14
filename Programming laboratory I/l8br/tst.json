@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "3\n3.0\n2.0\n10.0\n",
+      "output": "4.5\nAluno ainda não aprovado na unidade\n"
+    },
+    {
+      "category": "public",
+      "input": "2\n6.0\n6.0\n",
+      "output": "6.0\nAluno aprovado na unidade\n"
+    },
+    {
+      "category": "public",
+      "input": "1\n4.0\n",
+      "output": "4.0\nAluno ainda não aprovado na unidade\n"
+    }
+  ]
+}

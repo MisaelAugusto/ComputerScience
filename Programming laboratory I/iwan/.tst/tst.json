@@ -1,0 +1,13 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nnumero_disciplinas = getattr(undertest, 'numero_disciplinas', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def teste1(self):\n        grade = {\"p1\": [], \"lp1\": [], \"ic\": [],\"calc1\": [], \"p2\": [\"ic\", \"p1\", \"lp1\"],\n        \"lp2\": [\"ic\", \"p1\", \"lp1\"], \"grafos\": [\"ic\", \"p1\", \"lp1\"], \"calc2\"  : [\"calc1\"], \n        \"edados\": [\"ic\", \"p1\", \"lp1\", \"p2\", \"lp2\", \"grafos\"],\n        \"leda\": [\"ic\", \"p1\", \"lp1\", \"p2\", \"lp2\", \"grafos\"]}\n\n        horarios= {\"p1\": \"s082\", \"lp1\": \"x082\", \"ic\": \"i142\", \"calc1\": \"q082\", \"p2\": \"t162\",\n        \"lp2\": \"s082\", \"grafos\": \"q082\", \"calc2\": \"x162\", \"edados\": \"x162\", \"leda\": \"t102\"}\n\n        assert numero_disciplinas(grade, horarios, []) == 4\n        assert numero_disciplinas(grade, horarios, [\"ic\", \"p1\", \"lp1\"]) == 3\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "iid": 5813973463072768,
+  "kind": "assignment",
+  "activity_revision": "1.0.0",
+  "name": null
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "corrige_media.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nnota1 = 10\nnota2 = 5\n\nmedia = (nota1 + nota2) / 2.0\n\nprint \"Nota 1: %4.1f\" % nota1\nprint \"Nota 2: %4.1f\" % nota2\nprint \"M\u00e9dia : %4.1f\" % media\n",
+      "name": "corrige_media.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3626de0cab8be0c27e4c03eb20499c02",
+  "iid": 5778066798280704,
+  "activity_revision": "1.1.0"
+}

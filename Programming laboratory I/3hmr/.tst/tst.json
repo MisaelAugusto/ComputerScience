@@ -1,0 +1,14 @@
+{
+  "files": {
+    "metros_km.py": {
+      "category": "answer",
+      "data": "M = int(raw_input())\nK  = M / 1000.0\nprint \"%i m = %.2f km\" %(M, K)\n",
+      "name": "metros_km.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7b6604c972a2cac0cac44f7eb1871a67",
+  "iid": 6619086792425472,
+  "activity_revision": "1.1.1"
+}

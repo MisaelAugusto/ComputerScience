@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "umachave\n",
+      "output": "Chave segura!\n"
+    },
+    {
+      "category": "public",
+      "input": "alomundominhachavenaoehsegura\n",
+      "output": "Chave insegura. 6 vogais.\n"
+    },
+    {
+      "category": "public",
+      "input": "oijjjminhachave\n",
+      "type": "io",
+      "output": "Chave insegura. 3 caracteres consecutivos iguais.\n"
+    },
+    {
+      "category": "public",
+      "input": "oijjjminhachave\n",
+      "output": "Chave insegura. 3 caracteres consecutivos iguais."
+    }
+  ]
+}

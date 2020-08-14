@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "0\n0\n0\n3\n4\n0\n",
+      "output": "O perímetro é de 12.00\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 120.0,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "espaco.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Espa\u00e7o por v\u00edrgula\n\nfrase = raw_input()\ni = int(raw_input())\nj = int(raw_input())\n\nsaida = frase[i]\nfor n in range(i + 1, j):\n\tif frase[n] == \" \":\n\t\tx = \",\"\n\t\tsaida += \" \" + x\n\telse:\n\t\tx = \"\"\n\t\tsaida += \" \" + x + frase[n]\n\nprint saida\n",
+      "name": "espaco.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ca8dc112662627fc1035356d0d26ced2",
+  "iid": 5838732808683520,
+  "activity_revision": "1.1.4"
+}

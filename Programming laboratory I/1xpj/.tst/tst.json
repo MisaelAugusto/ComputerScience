@@ -1,0 +1,14 @@
+{
+  "files": {
+    "voos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Pesquisa Voos\n\nN = int(raw_input())\n\nvalores = []\nconexoes = []\ntempos = []\ncias = []\nfor i in range(N):\n\tentrada = raw_input().split(\",\")\n\tvalores.append(float(entrada[0]))\n\tconexoes.append(int(entrada[1]))\n\ttempos.append(int(entrada[2]))\n\tcias.append(entrada[3])\n\nwhile True:\n\tcriterio = raw_input()\n\tif criterio == \"fim\":\n\t\tbreak\n\tcia = cias[0]\n\tif criterio == \"valor\":\n\t\tmenor_valor = valores[0]\n\t\tfor i in range(1, len(valores)):\n\t\t\tif valores[i] < menor_valor:\n\t\t\t\tmenor_valor = valores[i]\n\t\t\t\tcia = cias[i]\n\telif criterio == \"tempo\":\n\t\tmenor_tempo = tempos[0]\n\t\tfor i in range(1, len(tempos)):\n\t\t\tif tempos[i] < menor_tempo:\n\t\t\t\tmenor_tempo = tempos[i]\n\t\t\t\tcia = cias[i]\n\telse:\n\t\tmenos_conexoes = conexoes[0]\n\t\tfor i in range(1, len(conexoes)):\n\t\t\tif conexoes[i] < menos_conexoes:\n\t\t\t\tmenos_conexoes = conexoes[i]\n\t\t\t\tcia = cias[i]\n\tprint cia\n",
+      "name": "voos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "41c5e5a1f96689d2d9c012886c0f43fd",
+  "iid": 4612995783065600,
+  "activity_revision": "1.0.0"
+}

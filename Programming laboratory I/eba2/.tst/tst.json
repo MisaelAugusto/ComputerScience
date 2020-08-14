@@ -1,0 +1,14 @@
+{
+  "files": {
+    "z_inicial.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Z Inicial\n\ndef z_inicial(lista):\n\tn = 0\n\tfor palavra in lista:\n\t\tif palavra[0].lower() == \"z\":\n\t\t\tn += 1\n\t\n\treturn n\n\nlista = raw_input().split()\n\nprint z_inicial(lista)\n",
+      "name": "z_inicial.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7926887d23858c293564e45d9026d9db",
+  "iid": 5809783588257792,
+  "activity_revision": "1.0.0"
+}

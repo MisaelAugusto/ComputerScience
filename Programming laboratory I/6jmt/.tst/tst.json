@@ -1,0 +1,18 @@
+{
+  "files": {
+    "questoes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Quest\u00f5es para P1\n\nnomes = []\nquestoes_lista = []\nwhile True:\n\tnome = raw_input()\n\tif nome == \"**\":\n\t\tbreak\n\telse:\n\t\tnomes.append(nome)\n\t\ttotal = 0\n\t\twhile True:\n\t\t\tquestoes = raw_input()\n\t\t\tif questoes == \"*\":\n\t\t\t\tquestoes_lista.append(total)\n\t\t\t\tbreak\n\t\t\ttotal += int(questoes)\n\nprint \"Relat\u00f3rio de novas quest\u00f5es:\\n\"\n\nsoma = 0\nfor i in range(len(nomes)):\n\tprint \"%s: %d\" %(nomes[i], questoes_lista[i])\n\tsoma += questoes_lista[i]\n\t\nprint \"---\\nTotal de novas quest\u00f5es: %d\" % soma\n",
+      "name": "questoes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e41cfef4f82574e325e4b185d1aa8d17",
+  "iid": 5065443945480192,
+  "activity_revision": "1.0.3"
+}

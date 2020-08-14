@@ -1,0 +1,18 @@
+{
+  "files": {
+    "quantas_PAs.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Quantas PAs ?\n\nrazao = int(raw_input())\n\nnumero_pas = 0\nwhile True:\n\tpa = 0\n\tsequencia = raw_input().split()\n\tif sequencia[0] == \"fim\":\n\t\tbreak\n\tfor i in range(len(sequencia) - 1, 0, -1):\n\t\tdiferenca = int(sequencia[i]) - int(sequencia[i - 1])\n\t\tif diferenca == razao:\n\t\t\tpa += 1\n\t\telse:\n\t\t\tbreak\n\tif pa == (len(sequencia) - 1):\n\t\tnumero_pas += 1\n\nprint numero_pas\n",
+      "name": "quantas_PAs.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 15,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "01c4a9fc32f14a7cdbd35cf5b05ac31d",
+  "iid": 5262831851143168,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "palavras.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Palavras com Letras Dobradas\n\nN = int(raw_input())\n\ncom_dobradas = []\nsem_dobradas = []\nfor i in range(N):\n\tciclos = 0\n\tpalavra = raw_input()\n\tfor i in range(len(palavra) - 1):\n\t\tif palavra[i] == palavra[i + 1]:\n\t\t\tcom_dobradas.append(palavra)\n\t\t\tbreak\n\t\telse:\n\t\t\tciclos += 1\n\tif ciclos == (len(palavra) - 1):\n\t\tsem_dobradas.append(palavra)\n\t\t\nprint \"%d palavra(s) com letras dobradas:\" % (len(com_dobradas))\nfor palavra in com_dobradas:\n\tprint palavra\nprint \"---\"\nprint \"%d palavra(s) sem letras dobradas:\" % (len(sem_dobradas))\nfor palavra in sem_dobradas:\n\tprint palavra\n\n",
+      "name": "palavras.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 41.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bc6a94dd005416c49d4cb7002a7c7a19",
+  "iid": 4948707942334464,
+  "activity_revision": "1.1.1"
+}

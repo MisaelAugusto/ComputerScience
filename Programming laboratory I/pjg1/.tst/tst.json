@@ -1,0 +1,18 @@
+{
+  "files": {
+    "coincidentes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Letras coincidentes\n\npalavra1 = raw_input()\npalavra2 = raw_input()\n\nprint \"Letras coincidentes\"\n\ncoincidentes = 0\nfor i in range(len(palavra1)):\n\tif palavra1[i] == palavra2[i]:\n\t\tprint \"'%s' na posi\u00e7\u00e3o %d\" % (palavra1[i], i + 1)\n\t\tcoincidentes += 1\n\nporcentagem = coincidentes * 100 / (len(palavra1) + len(palavra2))\nprint \"Total de letras coincidentes: %d (%d%%)\" % (coincidentes, porcentagem)\n",
+      "name": "coincidentes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 120.4,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "45327f5baff7f1d9eaf58538f1e46cf8",
+  "iid": 5906987086774272,
+  "activity_revision": "1.1.2"
+}

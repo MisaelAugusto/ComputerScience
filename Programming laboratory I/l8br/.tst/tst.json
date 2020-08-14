@@ -1,0 +1,18 @@
+{
+  "files": {
+    "status.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Status Unidade\n\nminitestes = int(raw_input())\n\nif minitestes > 1:\n\tnota1 = float(raw_input())\n\tnota2 = float(raw_input())\n\tif minitestes > 2:\n\t\tnota3 = float(raw_input())\n\t\tif minitestes > 3:\n\t\t\tnota4 = float(raw_input())\n\t\t\tmedia = ((nota1 + nota2 + nota3 + nota4) / 4) - 0.5\n\t\telse:\n\t\t\tmedia = ((nota1 + nota2 + nota3) / 3) - 0.5\n\telse:\n\t\tmedia = (nota1 + nota2) / 2\nelse:\n\tmedia = float(raw_input())\n\nprint media\n\nif media >= 6:\n\tprint \"Aluno aprovado na unidade\"\nelse:\n\tprint \"Aluno ainda n\u00e3o aprovado na unidade\"\n\t\t\n",
+      "name": "status.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 147.16,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b881d23fb20dd96b62a254bb14857118",
+  "iid": 6745574653034496,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "adjacentes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Tem vogais adjacentes\n\ndef tem_vogais_adjacentes(palavra):\n\tvogais = [\"a\", \"e\", \"i\", \"o\", \"u\"]\n\tinicia = True\n\tn = 0\n\tfor i in range(len(palavra) - 1):\n\t\tfor vogal in vogais:\n\t\t\tif palavra[i].lower() == vogal:\n\t\t\t\tn += 1\n\t\t\tif palavra[i + 1].lower() == vogal:\n\t\t\t\tn += 1\n\t\t\n\t\tif n == 2:\n\t\t\tmensagem = \"sim\"\n\t\t\tinicia = False\n\t\t\tbreak\n\t\telse:\n\t\t\tn = 0\n\t\n\tif inicia:\n\t\tmensagem = \"nao\"\n\n\t\t\t\n\treturn mensagem\n\t\npalavra = raw_input()\n\nprint tem_vogais_adjacentes(palavra)\n",
+      "name": "adjacentes.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7ca0dd44931ffb864f55078eb1b5d3aa",
+  "iid": 5860853031108608,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "AGCT\nTTTGGA\nACT\n",
+      "output": "ACT 3\n"
+    },
+    {
+      "category": "public",
+      "input": "CCGG\nCCAA\nACTGGG\n",
+      "output": "CCGG 4\n"
+    }
+  ]
+}

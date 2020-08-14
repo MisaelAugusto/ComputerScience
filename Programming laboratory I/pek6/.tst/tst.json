@@ -1,0 +1,18 @@
+{
+  "files": {
+    "diferenca.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Diferen\u00e7a entre Dois Hor\u00e1rios no Dia\n\ndef quanto_tempo(horario1, horario2):\n\tdif_horas = abs(int(horario2[0] + horario2[1]) - int(horario1[0] + horario1[1]))\n\tif int(horario2[3] + horario2[4]) < int(horario1[3] + horario1[4]):\n\t\tdif_horas -= 1\n\t\tdif_minutos = int(horario2[3] + horario2[4]) + (60 - int(horario1[3] + horario1[4]))\n\t\tdif_minutos2 = (60 - int(horario2[3] + horario2[4])) + (60 - int(horario1[3] + horario1[4]))\n\telse:\t\n\t\tdif_minutos = abs(int(horario2[3] + horario2[4]) - int(horario1[3] + horario1[4]))\n\treturn \"%d hora(s) e %d minuto(s)\" % (dif_horas, dif_minutos)\n\nprint quanto_tempo(\"07:15\", \"09:18\")\nprint quanto_tempo(\"22:05\", \"23:55\")\nprint quanto_tempo(\"19:15\", \"20:00\")\n",
+      "name": "diferenca.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nquanto_tempo = getattr(undertest, 'quanto_tempo', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert  quanto_tempo(\"07:15\", \"09:18\") == \"2 hora(s) e 3 minuto(s)\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b343d3a4417decebbca4492614cf40ee",
+  "iid": 6429312219611136,
+  "activity_revision": "1.0.0"
+}

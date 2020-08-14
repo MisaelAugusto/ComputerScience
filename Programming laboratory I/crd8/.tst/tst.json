@@ -1,0 +1,18 @@
+{
+  "files": {
+    "questoes_mt.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Quest\u00f5es para mt\n\ndef seleciona_questoes(todas, utilizadas):\n\tfor questao in utilizadas:\n\t\tfor i in range(len(todas) -1, -1, -1):\n\t\t\tif questao == todas[i]:\n\t\t\t\ttodas.pop(i)\n\t\t\t\tbreak\n\t\n\treturn todas\n\t\nprint seleciona_questoes([1, 2, 3, 4, 5], [3, 4])\n",
+      "name": "questoes_mt.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nseleciona_questoes = getattr(undertest, 'seleciona_questoes', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        todas = [1, 2, 3, 4, 5]\n        utilizadas = [3, 4]\n        seleciona_questoes(todas, utilizadas)\n        assert todas == [1, 2, 5]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "47c4cbccb956689acf34f2a733e9fb2f",
+  "iid": 6178384660922368,
+  "activity_revision": "1.0.0"
+}

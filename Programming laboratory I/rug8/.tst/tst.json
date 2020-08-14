@@ -1,0 +1,14 @@
+{
+  "files": {
+    "desenhando.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Desenhando uma \u00c1rvore de Natal\n\naltura = int(raw_input())\n\nfor i in range(altura, 0, -1):\n\tprint (\" \" * (i - 1)) + \"o\" + (\"o\" * (altura - i)) * 2\n\t\n\n\nprint \" \" * (altura - 1) + \"o\"\n",
+      "name": "desenhando.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2f1893f6d3bf9be2246bb599676ae8d6",
+  "iid": 5838237276831744,
+  "activity_revision": "1.0.0"
+}

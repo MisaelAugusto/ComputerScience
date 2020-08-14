@@ -1,0 +1,18 @@
+{
+  "files": {
+    "octal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Convertendo um N\u00famero Octal em um N\u00famero Decimal\n\nnumero = raw_input()\nnumero_decimal = 0\nfor i in range(len(numero) - 1, -1, -1):\n\tresultado = int(numero[len(numero) - 1 - i]) * 8 ** (i)\n\tprint \"%s * 8^%d = %d\" % (numero[len(numero) - 1 - i], i, resultado)\n\tnumero_decimal += resultado\n\t\nprint \"%s(8) = %d(10)\" % (numero, numero_decimal)\n",
+      "name": "octal.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e0d432e9b804cf967c020f6ae3d8a13d",
+  "iid": 5894983190052864,
+  "activity_revision": "1.1.2"
+}

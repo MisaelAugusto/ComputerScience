@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "10250\n",
+      "output": "10250 m = 10.25 km\n"
+    }
+  ]
+}

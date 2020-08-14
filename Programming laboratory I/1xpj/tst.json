@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "5\n2000.0,1,16,TAM\n4000.0,4,7,GOL\n1900.0,6,23,AVIANCA\n1500.0,3,5,AZUL\n8000.0,0,1,VASP\nvalor\ntempo\nfim\n",
+      "output": "AZUL\nVASP\n"
+    }
+  ]
+}

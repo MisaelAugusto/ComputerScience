@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 10,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 245.18,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "extrato.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Verifica Opera\u00e7\u00f5es Extrato\n\nN = int(raw_input())\nsaldo_atual = float(raw_input())\n\nsaques = 0\nwhile True:\n\toperacao = raw_input().split()\n\tif operacao[0] == \"dep\u00f3sito\":\n\t\tif float(operacao[1]) > 1000.00:\n\t\t\tprint \"Opera\u00e7\u00e3o inv\u00e1lida: dep\u00f3sito %.2f.\" % (float(operacao[1]))\n\t\t\tbreak\n\t\telse:\n\t\t\tsaldo_atual += float(operacao[1])\n\telif operacao[0] == \"saque\":\n\t\tsaques += 1\n\t\tif saques <= N:\n\t\t\tif saldo_atual - float(operacao[1]) < 0:\n\t\t\t\tprint \"Opera\u00e7\u00e3o inv\u00e1lida: saque %.2f.\" % (float(operacao[1]))\n\t\t\t\tbreak\n\t\t\telse:\n\t\t\t\tsaldo_atual -= float(operacao[1])\n\t\telse:\n\t\t\tprint \"Opera\u00e7\u00e3o inv\u00e1lida: saque %.2f.\" % (float(operacao[1]))\n\t\t\tbreak\n\t\t\t\nprint \"Seu saldo \u00e9 R$ %.2f.\" % saldo_atual\n",
+      "name": "extrato.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c7fa1862819d9382f7fc83f5ddfb34bc",
+  "iid": 5855193539280896,
+  "activity_revision": "1.0.3"
+}

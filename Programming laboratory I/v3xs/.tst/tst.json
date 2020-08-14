@@ -1,0 +1,14 @@
+{
+  "files": {
+    "CF.py": {
+      "category": "answer",
+      "data": "temperatura_celsius = float(raw_input())\ntemperatura_fahrenheit = 1.8*temperatura_celsius + 32\nprint \"%.1f\" %temperatura_fahrenheit\n\n",
+      "name": "CF.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f9ba2055297e542bfeb4b38208f8c38e",
+  "iid": 5987610736459776,
+  "activity_revision": "1.1.8"
+}

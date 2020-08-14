@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "30.0\n50.0\n10.0\n70.0\n",
+      "output": "Quantidade de números lidos: 4\nSoma dos números lidos: 160.00\nMédia = 40.00\n\nAbaixo da média\n30.00 (1o)\n10.00 (3o)\n\nAcima da média\n50.00 (2o)\n70.00 (4o)\n"
+    }
+  ]
+}

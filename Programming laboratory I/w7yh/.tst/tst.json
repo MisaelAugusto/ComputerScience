@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mp2.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nn1 = float(input())\nn2 = float(input())\nn3 = float(input())\np1 = float(input())\np2 = float(input())\np3 = 100 - (p1 + p2)\nmedia = (n1*p1 + n2*p2 + n3*p3) / 100\nprint \"M\u00e9dia Final: %.1f\" % media\n",
+      "name": "mp2.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "278596353c1b95c7905143169f53d643",
+  "iid": 5497602749497344,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "2.0\n",
+      "output": "12.57\n"
+    },
+    {
+      "category": "public",
+      "input": "0\n",
+      "output": "0.00\n"
+    },
+    {
+      "category": "public",
+      "input": "100.0\n",
+      "output": "31415.93\n"
+    },
+    {
+      "category": "public",
+      "input": "4\n",
+      "output": "50.27\n"
+    }
+  ]
+}

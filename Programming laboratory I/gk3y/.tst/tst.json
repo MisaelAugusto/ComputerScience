@@ -1,0 +1,18 @@
+{
+  "files": {
+    "adivinhe.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Adivinhe o n\u00famero\n\nimport random\n\nnum_sorteado = int(raw_input())\n\ntentativas = 0\nwhile True:\n\tpalpite = int(raw_input(\"palpite? \"))\n\ttentativas += 1\n\tif palpite > num_sorteado:\n\t\tprint \"alto\"\n\telif palpite < num_sorteado:\n\t\tprint \"baixo\"\n\telse:\n\t\tprint \"Voc\u00ea acertou em %d tentativas.\" % (tentativas)\n\t\tbreak\n",
+      "name": "adivinhe.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 49.83,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a7fa5019982a680f6e7b65b5e8e33cfc",
+  "iid": 4540790202171392,
+  "activity_revision": "1.0.2"
+}

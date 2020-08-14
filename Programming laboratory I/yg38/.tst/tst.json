@@ -1,0 +1,18 @@
+{
+  "files": {
+    "natal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Gratifica\u00e7\u00e3o Natalina\n\ncodigo = int(raw_input())\n\nif codigo == 1:\n\tprint \"Dever\u00e1 receber em dezembro R$ 25000.00.\"\nelif codigo == 2:\n\tprint \"Dever\u00e1 receber em dezembro R$ 15000.00.\"\nelif codigo == 3:\n\tfaltas = int(raw_input())\n\tif faltas == 0:\n\t\tG = 500\n\telse:\n\t\tG = (235 - faltas) * 2\n\tsalario_total = 8000 + G\n\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % G\n\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario_total\nelif codigo == 4:\n\tfaltas = int(raw_input())\n\tif faltas == 0:\n\t\tG = 300\n\telse:\n\t\tG = (235 - faltas) * 1\n\tsalario_total = 5000 + G\n\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % G\n\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario_total\nelse:\n\tfaltas = int(raw_input())\n\tif faltas == 0:\n\t\tG = 200\n\telse:\n\t\tG = (235 - faltas) * 0.7\n\tsalario_total = 2800 + G\n\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % G\n\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario_total\n\n",
+      "name": "natal.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 25,\n      \"vhalstead\": 129.66,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bbe5e3a4b07f4e44b1b95f8b98b29203",
+  "iid": 5220108939034624,
+  "activity_revision": "1.0.2"
+}

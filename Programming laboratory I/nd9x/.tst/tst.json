@@ -1,0 +1,14 @@
+{
+  "files": {
+    "abaixo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Abaixo da m\u00e9dia\n\ntotal = 0\nvalores = []\nwhile True:\n\t entrada = raw_input()\n\t if entrada == \"fim\":\n\t\t break\n\t total += float(entrada)\n\t valores.append(int(entrada))\n\nmedia = total / len(valores)\n\nprint \"%.2f\" % media\n\nfor i in range(len(valores)):\n\tif valores[i] < media:\n\t\tprint \"%d %d\" % (i + 1, valores[i])\n",
+      "name": "abaixo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "aeebb8cf6c7cc84c1569c51151b2d540",
+  "iid": 4828637501063168,
+  "activity_revision": "1.0.1"
+}

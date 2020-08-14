@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "85, 45\n35.0, 40.0\n-20, 15\n215, 181\n",
+      "output": "96.18\n53.15\n25.00\n--\nnum disparos: 3\ndistancia media: 58.11\n"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "lanche.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Lanche mais pedido\n\ndef lanchemaispedido(pedidos):\n\tfrequencias = []\n\tpedidos_lista = []\n\tif len(pedidos) > 1:\n\t\tfor i in range(len(pedidos)):\n\t\t\tfrequencia = 1\n\t\t\tfor j in range(len(pedidos)):\n\t\t\t\tif i != j and pedidos[i] == pedidos[j]:\n\t\t\t\t\tfrequencia += 1\n\t\t\t\t\tpedido = pedidos[i]\t\n\n\t\t\tif frequencia > (len(pedidos) / 2):\n\t\t\t\treturn pedido\n\tif len(pedidos) == 1:\n\t\treturn pedidos[0]\n\n\n\t\nines = ['tapioca','tapioca','salada','bolo','misto','tapioca', 'tapioca']\nmarcos = ['suco','coxinha','suco','misto','folhado']\nmisael = [\"tapioca\"]\nprint lanchemaispedido(ines)\nprint lanchemaispedido(marcos)\nprint lanchemaispedido(misael)\n",
+      "name": "lanche.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nlanchemaispedido = getattr(undertest, 'lanchemaispedido', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo_1(self):\n    ines = ['tapioca','tapioca','salada','bolo','misto','tapioca', 'tapioca']\n    assert lanchemaispedido(ines) == 'tapioca'\n    \n\n   def test_exemplo_2(self):\n       marcos = ['suco','coxinha','suco','misto','folhado']\n       assert lanchemaispedido(marcos) == None\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6fb50ff8d31a3f9254687b498e0552cf",
+  "iid": 5260820330053632,
+  "activity_revision": "1.0.3"
+}

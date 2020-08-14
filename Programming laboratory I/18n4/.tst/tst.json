@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninverte3a3 = getattr(undertest, 'inverte3a3', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_3(self):\n        assert inverte3a3(\"paisimtio\") == \"tiosimpai\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "invertida.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Sequencia Invertida 3 a 3\n\ndef inverte3a3(s):\n\ttrios = []\n\tfor i in range(0, len(s), 3):\n\t\ttrios.append(s[i] + s[i + 1] + s[i + 2])\n\t\n\ts_final = \"\"\n\tfor i in range(len(trios) - 1, -1, -1):\n\t\ts_final += trios[i]\n\t\t\n\treturn s_final\n\t\nprint inverte3a3(\"paisimtio\")\n",
+      "name": "invertida.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a3c12c4a1f1f03fd4cf0feddaee0af02",
+  "iid": 6083644393259008,
+  "activity_revision": "1.0.0"
+}

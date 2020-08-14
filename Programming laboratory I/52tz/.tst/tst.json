@@ -1,0 +1,18 @@
+{
+  "files": {
+    "conjuntos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Conjuntos Maiores\n\nlimite = int(raw_input())\nconjuntos = int(raw_input())\ntotal = 0\ntotais = []\nwhile conjuntos > 0:\n\tnumero = int(raw_input())\n\tif numero < 0:\n\t\ttotais.append(total)\n\t\tconjuntos -= 1\n\t\ttotal = 0\n\telse:\n\t\ttotal += numero\n\nfor i in range(len(totais)):\n\tif totais[i] > limite:\n\t\tprint \"conjunto %d: %d\" % (i + 1, totais[i])\n",
+      "name": "conjuntos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 14,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "52f713210348862485166de21a20a418",
+  "iid": 6201875984547840,
+  "activity_revision": "1.0.1"
+}

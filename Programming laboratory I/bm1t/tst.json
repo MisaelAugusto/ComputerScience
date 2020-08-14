@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "12 1\n11 11\n2 3\n3 4\n4 5\n13 1\n0 0\n",
+      "output": "Jogador 1: 2, Jogador 2: 3, Empates: 1\n"
+    }
+  ]
+}

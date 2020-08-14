@@ -1,0 +1,18 @@
+{
+  "files": {
+    "10.py": {
+      "category": "answer",
+      "data": "num1 = int(raw_input())\nnum2 = int(raw_input())\n\nif num1 == 10 or num2 == 10 or num1 + num2 == 10:\n\tprint \"SIM\"\nelse:\n\tprint \"NAO\"\n",
+      "name": "10.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 53.15,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "638a62db1781e62d1645c124a1d305b1",
+  "iid": 4522421566570496,
+  "activity_revision": "1.0.2"
+}

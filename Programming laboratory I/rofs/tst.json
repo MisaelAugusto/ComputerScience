@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "3x1 (c)\n1x3 (f)\n3x1 (c)\n1x3 (f)\n3x1 (c)\n1x3 (f)\n3x1 (c)\n1x3 (f)\n3x1 (c)\n1x3 (f)\n",
+      "type": "io",
+      "name": "exemplo",
+      "output": "10v, 0e, 0d\npontos: 30\nsaldo: 20 (30 pro, 10 contra)\npontos em casa: 15\npontos fora: 15\n"
+    }
+  ]
+}

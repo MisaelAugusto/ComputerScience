@@ -1,0 +1,18 @@
+{
+  "files": {
+    "operacoes_bancarias.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Opera\u00e7\u00f5es Banc\u00e1rias\n\nnome_e_saldo = raw_input().split()\nsaldo_final = float(nome_e_saldo[1])\n\nwhile True:\n\tentrada = raw_input().split()\n\tif entrada[0] == \"3\":\n\t\tbreak\n\telif entrada[0] == \"2\":\n\t\tsaldo_final += float(entrada[1])\n\telse:\n\t\tsaldo_final -= float(entrada[1])\n\nprint \"Saldo de R$ %.2f na conta de %s\" % (saldo_final, nome_e_saldo[0])\n",
+      "name": "operacoes_bancarias.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 13,\n      \"vhalstead\": 55.51,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "877c93ee9d40283a15ab90495c1fcb6b",
+  "iid": 5862096357031936,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "mais_velho.py": {
+      "category": "answer",
+      "data": "nome1 = raw_input()\ndia1 = int(raw_input())\nmes1 = int(raw_input())\nano1 = int(raw_input())\nnome2 = raw_input()\ndia2 = int(raw_input())\nmes2 = int(raw_input())\nano2 = int(raw_input())\n\nif ano1 == ano2:\n\tif mes1 == mes2:\n\t\tif dia1 == dia2:\n\t\t\tprint \"nenhuma\"\n\t\telse:\n\t\t\tif dia1 > dia2:\n\t\t\t\tprint nome2\n\t\t\telse:\n\t\t\t\tprint nome1\n\telse:\n\t\tif mes1 > mes2:\n\t\t\tprint nome2\n\t\telse:\n\t\t\tprint nome1\nelse:\n\tif ano1 > ano2:\n\t\tprint nome2\n\telse:\n\t\tprint nome1\n",
+      "name": "mais_velho.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 25,\n      \"vhalstead\": 54.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "93d2c8ebbd2402740b13590ac57fa27d",
+  "iid": 5160006945079296,
+  "activity_revision": "1.0.2"
+}

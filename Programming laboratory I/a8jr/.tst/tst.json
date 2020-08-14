@@ -1,0 +1,14 @@
+{
+  "files": {
+    "oscilantes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: N\u00fameros Oscilantes\n\nnumero = raw_input()\nfor i in range(len(numero) - 1):\n\tcondicao1 = (int(numero[i]) % 2 == 0 and int(numero[i + 1]) % 2 != 0)\n\tcondicao2 = (int(numero[i]) % 2 != 0 and int(numero[i + 1]) % 2 == 0)\n\tif condicao1 or condicao2:\n\t\tmensagem = \"verdadeiro\"\n\telse:\n\t\tmensagem = \"falso\"\n\t\tbreak\n\t\t\nprint \"%s: %d algarismos.\" % (mensagem, len(numero))\n",
+      "name": "oscilantes.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7375e37772a1e1e908bf70ff1fd37c40",
+  "iid": 6443062154756096,
+  "activity_revision": "1.1.1"
+}

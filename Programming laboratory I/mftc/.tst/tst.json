@@ -1,0 +1,18 @@
+{
+  "files": {
+    "make_set.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Make Set\n\ndef make_set(lista):\n\tif len(lista) > 1:\t\n\t\tfor i in range(len(lista) - 1, 0, -1):\n\t\t\tfor j in range(i - 1, -1, -1):\n\t\t\t\tif lista[i] == lista[j]:\n\t\t\t\t\tlista.pop(i)\n\t\t\t\t\tbreak\n\treturn lista\n\t\nprint make_set([2, 2, 2])\n\t\n",
+      "name": "make_set.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmake_set = getattr(undertest, 'make_set', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_example(self):\n        l = [1, 2, 1]\n        make_set(l)\n        assert l == [1, 2]\n\n    def test_exemplo2(self):\n        l = [1]\n        make_set(l)\n        assert l == [1]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9f55ef4a867d36871c68e4313e53c567",
+  "iid": 4929030348341248,
+  "activity_revision": "1.0.0"
+}

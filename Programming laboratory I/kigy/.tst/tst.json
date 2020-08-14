@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limite.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Limite de gastos\n\nmedia_secretaria = float(raw_input())\n\nmedias_acima = []\nwhile True:\n\ttotal = 0\n\tentrada = raw_input().split()\n\tif entrada[0] == \"fim\":\n\t\tbreak\n\tfor gasto in entrada:\n\t\ttotal += float(gasto)\n\tmedia = total / len(entrada)\n\tif media <= (media_secretaria / 2):\n\t\tbreak\n\tif media >= media_secretaria:\n\t\tmedias_acima.append(entrada)\n\t\nfor m in medias_acima:\n\tm = \" \".join(m)\n\tprint m\n",
+      "name": "limite.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 2,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "405ee0daf59e0a998f7c9b4bebe2c959",
+  "iid": 5088934866452480,
+  "activity_revision": "1.0.2"
+}

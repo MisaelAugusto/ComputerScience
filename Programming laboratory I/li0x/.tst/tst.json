@@ -1,0 +1,18 @@
+{
+  "files": {
+    "encontra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Encontra Elemento\n\nN = int(raw_input())\n\nsequencia = raw_input().split()\n\nnao = True\nfor numero in sequencia:\n\tif int(numero) == N:\n\t\tnao = False\n\t\tprint \"sim\"\n\t\tbreak\n\nif nao:\n\tprint \"n\u00e3o\"\n",
+      "name": "encontra.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 8,\n      \"vhalstead\": 4.75,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8c598b97b2531ec3b9be7ca5cb209d20",
+  "iid": 4990337986592768,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "soma.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Soma dos \u00daltimos \u00cdmpares\n\nN = int(raw_input())\nlimite = int(raw_input())\n\nnumeros = []\nfor i in range(N):\n\tnumero = int(raw_input())\n\tnumeros.append(numero)\n\t\nsoma = 0\nfor i in range(len(numeros) - 1, - 1, - 1):\n\tif (numeros[i] % 2) != 0:\n\t\tif (soma + numeros[i]) < limite:\n\t\t\tsoma += numeros[i]\n\t\telse:\n\t\t\tbreak\nprint soma\n",
+      "name": "soma.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 70.32,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "87e8f4277d6a91d87badd24910cee7d3",
+  "iid": 5722568036188160,
+  "activity_revision": "1.0.1"
+}

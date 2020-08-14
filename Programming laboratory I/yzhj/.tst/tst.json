@@ -1,0 +1,14 @@
+{
+  "files": {
+    "ranking.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Imprime Ranking (CNumulativo)\n\"\"\" resolver quando todos s\u00e3o iguais !!!\"\"\"\nn = int(raw_input())\n\nnomes_times = []\npontos_times = []\nfor i in range(n):\n\tnome = raw_input()\n\tpontos = int(raw_input())\n\tnomes_times.append(nome)\n\tpontos_times.append(pontos)\n\nciclos = 0\ncondicao = True\nfor i in range(n):\n\tif pontos_times[i] == pontos_times[i - 1]:\n\t\tciclos += 1\n\t\tif ciclos == n:\n\t\t\tcondicao = False\n\t\t\tfor i in range(n):\n\t\t\t\tprint \"%d. %s (%d)\" % (1, nomes_times[i], pontos_times[i])\n\t\t\tbreak\nif condicao:\n\tprint \"%d. %s (%d)\" % (1, nomes_times[0], pontos_times[0])\n\tfor i in range(1, n):\n\t\tif pontos_times[i] == pontos_times[i - 1]:\n\t\t\tprint \"%d. %s (%d)\" % (i, nomes_times[i], pontos_times[i])\n\t\telse:\t\n\t\t\tprint \"%d. %s (%d)\" % (i + 1, nomes_times[i], pontos_times[i])\n\t\n",
+      "name": "ranking.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4dfa905cb95d5f024f9878d366b12cf8",
+  "iid": 5214893640777728,
+  "activity_revision": "2.0.0"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "squeeze.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Squeeze\n\ndef squeeze(lista):\n\tif len(lista) > 1:\t\n\t\tfor i in range(len(lista) - 1, 0, -1):\n\t\t\tif lista[i] == lista[i - 1]:\n\t\t\t\tlista.pop(i)\n\t\n\treturn lista\n\nprint squeeze([0, 0, 0])\n",
+      "name": "squeeze.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsqueeze= getattr(undertest, 'squeeze', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n      nums = [3, 1, 1, 1, 4, 7, 3, 3, 2, 7]\n      assert squeeze(nums) == [3, 1, 4, 7, 3, 2, 7]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "aeb445ae88c58ae880e18a3b41264f71",
+  "iid": 6357969725816832,
+  "activity_revision": "1.0.0"
+}

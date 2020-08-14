@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "42\n17\n",
+      "output": "Análise da Turma\n===\nNúmero de aprovados? Número de reprovados? ---\nTotal de alunos na turma: 59\nAprovados: 42 = 71.2%\nReprovados: 17 = 28.8%\n"
+    }
+  ]
+}

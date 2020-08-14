@@ -1,0 +1,14 @@
+{
+  "files": {
+    "elementos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Elementos Qu\u00edmicos\n\nwhile True:\n\tdic = {\"H\": 1, \"S\": 32, \"O\": 16, \"C\": 12, \"Ca\": 40, \"Na\": 23, \"P\": 31}\n\tentrada = raw_input().split()\n\tif entrada[0] == \"fim\":\n\t\tbreak\n\telse:\n\t\tMM = 0\n\t\ti = 0\n\t\twhile i < len(entrada) - 1:\n\t\t\tif entrada[i + 1].isdigit() :\n\t\t\t\tMM += dic[entrada[i]] * int(entrada[i + 1])\n\t\t\t\ti += 1\n\t\t\telse:\n\t\t\t\tMM += dic[entrada[i]]\n\t\t\ti += 1\n\t\t\n\t\tif not(entrada[-1].isdigit()):\n\t\t\tMM += dic[entrada[-1]]\n\t\t\n\t\tprint MM\n\t\t\t\n",
+      "name": "elementos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6d5cc861610bfa4ada86fb4a9d2b09ef",
+  "iid": 5770910107697152,
+  "activity_revision": "1.0.0"
+}

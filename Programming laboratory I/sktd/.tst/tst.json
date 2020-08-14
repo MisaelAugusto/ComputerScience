@@ -1,0 +1,18 @@
+{
+  "files": {
+    "desempenho.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# ALuno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Avalia\u00e7\u00e3o de Desempenho Acad\u00eamico\n\nN = int(raw_input())\npontuacao_ensino = int(raw_input())\npontuacao_producao = int(raw_input())\npontuacao_orientacao = int(raw_input())\npontuacao_administrativas = int(raw_input())\n\ntotal = pontuacao_ensino + pontuacao_producao + pontuacao_orientacao + pontuacao_administrativas\n\nif N < 4:\n\tprint \"Promo\u00e7\u00e3o indeferida. N\u00famero de semestres insuficiente.\"\nelse:\n\tif pontuacao_ensino >= 320:\n\t\tif pontuacao_producao >= 100:\n\t\t\tif pontuacao_orientacao >= 20:\n\t\t\t\tmedia = total / 4.0\n\t\t\t\tif media > 140:\n\t\t\t\t\tprint \"Promo\u00e7\u00e3o deferida. Parab\u00e9ns!\"\n\t\t\t\telse:\n\t\t\t\t\tprint \"Promo\u00e7\u00e3o indeferida. M\u00e9dia insuficiente.\"\n\t\t\telse:\n\t\t\t\tprint \"Promo\u00e7\u00e3o indeferida. Pontua\u00e7\u00e3o m\u00ednima n\u00e3o alcan\u00e7ada.\"\n\t\telse:\n\t\t\tprint \"Promo\u00e7\u00e3o indeferida. Pontua\u00e7\u00e3o m\u00ednima n\u00e3o alcan\u00e7ada.\"\n\telse:\n\t\tprint \"Promo\u00e7\u00e3o indeferida. Pontua\u00e7\u00e3o m\u00ednima n\u00e3o alcan\u00e7ada.\"\n\n\n",
+      "name": "desempenho.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 136.16,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "329c4732bb2948e428e8392de4c83adc",
+  "iid": 5798795283529728,
+  "activity_revision": "1.1.1"
+}

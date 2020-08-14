@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "2.30\n2.30\n10.40\n5.60\n1.20\n",
+      "output": "Saldo total do FIS: R$20.60.\nMédia das contribuições: R$5.15.\n"
+    }
+  ]
+}

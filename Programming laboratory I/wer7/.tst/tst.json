@@ -1,0 +1,18 @@
+{
+  "files": {
+    "caixa_preta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Caixa Preta\n\nN = int(raw_input())\n\nvalidos = 0\nciclos = 1\nfor i in range(N):\n\tmedicao = raw_input().split()\n\tif int(medicao[0]) >= 0:\n\t\tvalidos += 1\n\t\tif int(medicao[1]) >= 0:\n\t\t\tvalidos += 1\n\t\t\tif int(medicao[2]) >= 0:\n\t\t\t\tvalidos += 1\n\t\t\telse:\n\t\t\t\tprint \"dado inconsistente. altitude negativa.\"\n\t\t\t\tbreak\n\t\telse:\n\t\t\tprint \"dado inconsistente. combust\u00edvel negativo.\"\n\t\t\tbreak\n\telse:\n\t\tprint \"dado inconsistente. peso negativo.\"\n\t\tbreak\n\tciclos += 1\nfor i in range(N - ciclos):\n\tmedicao = raw_input().split()\t\t\t\n\t\t\nprint \"%d dados v\u00e1lidos.\" % validos\n",
+      "name": "caixa_preta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 117.21,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "58f698d3337aef441eddefd39d8516fc",
+  "iid": 4839564099190784,
+  "activity_revision": "1.0.2"
+}

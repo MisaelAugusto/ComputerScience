@@ -1,0 +1,18 @@
+{
+  "files": {
+    "imprime.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Imprime Sequencias de N\u00fameros Inteiros\n\nnumero = int(raw_input())\nsequencias = []\nmaior = 0\n\nwhile True:\n\tsequencia = raw_input()\n\tif sequencia == \"fim\":\n\t\tbreak\n\tsequencia = sequencia.split()\n\tsequencias.append(sequencia)\n\n\nciclo = 1\nfor s in sequencias:\n\tmaior = 0\n\tfor i in range(len(s)):\n\t\tif int(s[i]) > numero:\n\t\t\tmaior += 1\t\n\tif len(s) % 2 == 0:\n\t\tif maior > (len(s) / 2):\n\t\t\tsequencia = \" \".join(s)\n\t\t\tprint \"sequencia %d: %s\" %(ciclo, sequencia)\n\telse:\n\t\tif maior >= ((len(s) / 2) + 1):\n\t\t\tsequencia = \" \".join(s)\n\t\t\tprint \"sequencia %d: %s\" %(ciclo, sequencia)\n\tciclo += 1\n\n\n",
+      "name": "imprime.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "27b447e19e2af73c21433888830924e0",
+  "iid": 5210473179906048,
+  "activity_revision": "1.0.3"
+}

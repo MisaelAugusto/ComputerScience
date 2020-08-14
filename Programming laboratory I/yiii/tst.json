@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Dalton\n",
+      "name": "exemplo",
+      "output": "Dalton\nDalton\nDalton\n"
+    }
+  ]
+}

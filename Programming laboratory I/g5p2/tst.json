@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Carlos 123\nPedro 111\nJulio 992\nMaria 120\nfim\n120\n",
+      "output": "Carlos, 123\nJulio, 992\nMaria, 120\n"
+    }
+  ]
+}

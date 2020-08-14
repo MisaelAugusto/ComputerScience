@@ -1,0 +1,18 @@
+{
+  "files": {
+    "classifica.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Classifica N\u00fameros pelo Menor dos Extremos\n\nN = int(raw_input())\n\nnumeros = []\nfor i in range(N):\n\tnumero = int(raw_input())\n\tnumeros.append(numero)\n\nacima = 0\nabaixo = 0\nif numeros[0] > numeros[-1]:\n\tprint \"Menor dos extremos: %d\" % numeros[-1]\n\tfor i in range(N - 1):\n\t\tif numeros[i] > numeros[-1]:\n\t\t\tacima += 1\n\t\telif numeros[i] < numeros [-1]:\n\t\t\tabaixo += 1\n\t\telse:\n\t\t\tcontinue\nelse:\n\tprint \"Menor dos extremos: %d\" % numeros[0]\n\tfor i in range(1, N):\n\t\tif numeros[i] > numeros[0]:\n\t\t\tacima += 1\n\t\telif numeros[i] < numeros[0]:\n\t\t\tabaixo += 1\n\t\telse:\n\t\t\tcontinue\nprint \"%d n\u00famero(s) abaixo do menor\" % abaixo\nprint \"%d n\u00famero(s) acima do menor\" % acima\n",
+      "name": "classifica.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 79.95,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fdd650ca62da347060157508c9b2c00f",
+  "iid": 4832054080438272,
+  "activity_revision": "1.0.2"
+}

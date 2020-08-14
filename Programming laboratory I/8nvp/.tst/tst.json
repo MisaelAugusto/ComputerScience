@@ -1,0 +1,18 @@
+{
+  "files": {
+    "inteiros.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Inteiros Positivos Divis\u00edveis\n\nA = int(raw_input())\nB = int(raw_input())\nK = int(raw_input())\n\nfor i in range(1, K + 1):\n\tif i % A == 0 and i % B == 0:\n\t\tprint i\n",
+      "name": "inteiros.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d24432f3c0b84d3c3ad5f6987e77d6e2",
+  "iid": 5328328558903296,
+  "activity_revision": "1.1.0"
+}

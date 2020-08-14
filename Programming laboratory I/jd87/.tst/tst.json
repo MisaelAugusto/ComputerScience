@@ -1,0 +1,18 @@
+{
+  "files": {
+    "quantidade.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Quantidade de Inteiros Divis\u00edveis por K\n\nK = int(raw_input())\nN = int(raw_input())\n\ndiv = 0\nfor i in range(N):\n\tnumero = int(raw_input())\n\tif numero % K == 0:\n\t\tdiv += 1\n\t\t\n\nprint \"%d (%.1f%%)\" % (div, div * 100.0 / N)\n",
+      "name": "quantidade.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 72.0,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0e45e92d7ef23a14c7b5160b2dba848c",
+  "iid": 5307791635906560,
+  "activity_revision": "1.1.1"
+}

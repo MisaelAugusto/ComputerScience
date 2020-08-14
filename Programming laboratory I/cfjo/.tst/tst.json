@@ -1,0 +1,18 @@
+{
+  "files": {
+    "autorizacao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Autoriza\u00e7\u00e3o voos\n\ntempo_total = int(raw_input())\navioes = int(raw_input())\n\nautorizados = 0\nfor i in range(avioes):\n\ttempo_aviao = int(raw_input())\n\tif tempo_aviao <= tempo_total:\n\t\tautorizados += 1\n\t\ttempo_total -= tempo_aviao\nprint \"%d voo(s) autorizados.\" % autorizados\n",
+      "name": "autorizacao.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 51.89,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5f9d2bbc15ff3a6e63362504d716f851",
+  "iid": 5099224668569600,
+  "activity_revision": "1.1.4"
+}

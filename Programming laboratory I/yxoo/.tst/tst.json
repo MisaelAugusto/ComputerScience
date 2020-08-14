@@ -1,0 +1,18 @@
+{
+  "files": {
+    "classico.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Cl\u00e1ssico dos Maiorais\n\ngols_campinense = int(raw_input())\ngols_treze = int(raw_input())\n\nif gols_campinense > gols_treze:\n\tprint \"Campinense\"\nelif gols_campinense < gols_treze:\n\tprint \"Treze\"\nelse:\n\tprint \"Empate\"\n",
+      "name": "classico.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 9.51,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ba2d79501ce98561d69d1d9d3ea9ebd0",
+  "iid": 4871830309437440,
+  "activity_revision": "1.1.1"
+}

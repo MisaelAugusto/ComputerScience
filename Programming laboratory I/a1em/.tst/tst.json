@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nunico = getattr(undertest, 'unico', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert unico(\"aa***xxxzzb+++\") == \"a*xzb+\"\n\n   def test_string_vazia(self):\n       assert unico(\"\") == \"\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "unico.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: \u00danico\n\ndef unico(string):\n\tstring_final = \"\"\n\tfor i in range(len(string) - 1):\n\t\tif string[i] != string[i + 1]:\n\t\t\tstring_final += string[i]\t\t\n\tif len(string) != 0:\n\t\tstring_final += string[-1]\n\treturn string_final\n\t\nprint unico(\"mmiissaaeell\")\nprint unico(\"aa***xxxzzb+++\")\nprint unico(\"aabaabc\")\nprint unico(\"aabaa\")\n",
+      "name": "unico.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "17f8f78ab622843e11511196039a9225",
+  "iid": 5525655932370944,
+  "activity_revision": "2.0.0"
+}

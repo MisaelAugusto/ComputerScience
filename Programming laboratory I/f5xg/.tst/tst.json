@@ -1,0 +1,18 @@
+{
+  "files": {
+    "atendimento.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Atendimentos no SAMU\n\ntotal = 0\natendimentos_lista = []\nfor i in range(12):\n\tatendimentos = int(raw_input())\n\ttotal += atendimentos\n\tatendimentos_lista.append(atendimentos)\n\nmedia = total / 12.0\nprint \"M\u00e9dia mensal de atendimentos: %.2f\" % media\nprint \"----\"\nfor i in range(len(atendimentos_lista)):\n\tif atendimentos_lista[i] > media:\n\t\tprint \"M\u00eas %d: %d\" % (i + 1, atendimentos_lista[i])\n",
+      "name": "atendimento.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 10,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "87f7ddfe080043f25fdd69be32a0a52b",
+  "iid": 5794761067724800,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "moto\n",
+      "output": "Veículo não cadastrado.\n"
+    },
+    {
+      "category": "public",
+      "input": "Motocicleta\n",
+      "output": "Valor a pagar: R$ 5.70.\n"
+    },
+    {
+      "category": "public",
+      "input": "Ônibus\n2\n",
+      "output": "Valor a pagar: R$ 22.80.\n"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "1\n500\n",
+      "output": "TAV. R$ 100.00\n"
+    },
+    {
+      "category": "public",
+      "input": "6\n300\n",
+      "output": "Ônibus. R$ 132.00\n"
+    },
+    {
+      "category": "public",
+      "input": "3\n220\n",
+      "output": "Táxi. R$ 200.00\n"
+    }
+  ]
+}

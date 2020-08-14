@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "1\n",
+      "output": "Fahrenheit: 1.000 F\nCelsius: -17.222 C\nKelvin: 255.928 K\n"
+    },
+    {
+      "category": "public",
+      "input": "74.3\n",
+      "output": "Fahrenheit: 74.300 F\nCelsius: 23.500 C\nKelvin: 296.650 K\n"
+    }
+  ]
+}

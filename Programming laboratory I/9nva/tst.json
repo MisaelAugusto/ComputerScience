@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "8\n3\n2\n7\n1\n0\n5\n2\n4\n",
+      "output": "Menor dos extremos: 3\n4 número(s) abaixo do menor\n3 número(s) acima do menor\n"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "absoluto.py": {
+      "category": "answer",
+      "data": "N = int(raw_input())\nif N < 0:\n\tprint N * -1\nelse:\n\tprint N\n",
+      "name": "absoluto.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4b6b3363db9dfc5dc37c6036d2cf68a9",
+  "iid": 5822250636804096,
+  "activity_revision": "1.0.0"
+}

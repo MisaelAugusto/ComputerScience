@@ -1,0 +1,18 @@
+{
+  "files": {
+    "teorema_herao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Utilizando o Teorema de Her\u00e3o para Calcular a \u00c1rea de Tri\u00e2ngulos\n\nimport math\n\nN = int(raw_input())\n\nareas = []\nfor i in range(N):\n\tmedidas = raw_input().split()\n\ta = float(medidas[0])\n\tb = float(medidas[1])\n\tc = float(medidas[2])\n\ts = (a + b + c) / 2\n\tarea = math.sqrt(s * (s - a) * (s - b) * (s - c))\n\tareas.append(area)\n\t\nmaiores = 0\ntotal = 0\nfor i in range(N):\n\tif areas[i] > 100:\n\t\tmaiores += 1\n\t\ttotal += areas[i]\n\tprint \"\u00c1rea %d: %.2f\" % ((i + 1), areas[i])\n\t\nif maiores > 0:\n\tmedia = total / maiores\n\tprint \"N\u00famero maiores: %d, \u00e1rea m\u00e9dia: %.2f\" % (maiores, media)\n",
+      "name": "teorema_herao.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 230.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "62e40b1f6e64b7785dce087c77ea6640",
+  "iid": 5257962767515648,
+  "activity_revision": "1.2.0"
+}

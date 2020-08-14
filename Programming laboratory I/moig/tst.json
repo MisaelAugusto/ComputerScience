@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "p: -5 0 2 0 3\n10\n2\n0\np: 3 1\n100\n8\nfim\n",
+      "output": "novo polinomio\n30195\n51\n-5\nnovo polinomio\n103\n11\n"
+    }
+  ]
+}

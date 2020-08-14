@@ -1,0 +1,14 @@
+{
+  "files": {
+    "fatias.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nconvidados = int(raw_input())\nop1_inteira = 32 / convidados\nop1_resto = 32 % convidados\nop2 = 32.0 / convidados\nprint \"Op\u00e7\u00e3o 1: %i fatias cada, %i de resto\" %(op1_inteira, op1_resto)\nprint \"Op\u00e7\u00e3o 2: %.2f fatias cada\" % op2\n\n",
+      "name": "fatias.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4df4161f537d3c880313a173262b5ebc",
+  "iid": 5911176424718336,
+  "activity_revision": "1.1.2"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nencontra_rotulo_perdido = getattr(undertest, 'encontra_rotulo_perdido', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['skol', 'brahma', 'itaipava']\n        l2 = ['itaipava', 'brahma']\n        assert encontra_rotulo_perdido(l1,l2) == 'skol'\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "falta_um.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Falta um\n\ndef encontra_rotulo_perdido(rotulos_enviados, rotulos_recebidos):\n\tfor rotulo in rotulos_enviados:\n\t\tn = 0\n\t\tfor rc in rotulos_recebidos:\n\t\t\tif rotulo == rc:\n\t\t\t\tbreak\n\t\t\telse:\n\t\t\t\tn += 1\n\t\n\t\tif n == len(rotulos_recebidos):\n\t\t\treturn rotulo\n",
+      "name": "falta_um.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "29792d7bb7a77cf5a2d2779951f9dec3",
+  "iid": 5772602861682688,
+  "activity_revision": "1.0.0"
+}

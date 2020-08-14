@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "10\n2\n5\n5\n",
+      "output": "2 voo(s) autorizados.\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "produto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Produto de dois somat\u00f3rios\n\ndigitos = raw_input()\n\nsoma_par = 0\nsoma_impar = 0\nfor i in range(len(digitos)):\n\tif i % 2 > 0:\n\t\tsoma_impar += int(digitos[i])\n\telse:\n\t\tsoma_par += int(digitos[i])\ntotal = soma_impar * soma_par\ntotal = str(total)\nn = 5 - len(total)\ntotal = (\"0\" * n) + total\n\t\nprint total\n",
+      "name": "produto.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 1,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "07db458aaa7de2d4f00e0409c8b3461d",
+  "iid": 5291153066819584,
+  "activity_revision": "1.0.1"
+}

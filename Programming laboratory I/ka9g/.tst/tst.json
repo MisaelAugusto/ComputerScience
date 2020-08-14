@@ -1,0 +1,14 @@
+{
+  "files": {
+    "ap_circulo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nimport math\n\ndiametro = int(raw_input())\nraio = diametro / 2.0\narea = math.pi * (raio **2)\nperimetro = 2 * math.pi * raio\n\nprint \"A: %.5f\" %area\nprint \"P: %.5f\" %perimetro\n",
+      "name": "ap_circulo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3d9ec958a5d65d67609dfd4bb8eeed8f",
+  "iid": 5537404110766080,
+  "activity_revision": "1.1.1"
+}

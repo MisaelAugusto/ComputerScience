@@ -1,0 +1,18 @@
+{
+  "files": {
+    "corredor.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Classifica Corredor\n\n\nkilometros = float(raw_input())\ntempo = float(raw_input())\n\nvelocidade = kilometros / tempo\n\nif velocidade < 10:\n\tprint \"Velocidade: %.1fkm/h. Corredor amador.\" % velocidade\nelif 10 <= velocidade <= 15:\n\tprint \"Velocidade: %.1fkm/h. Corredor aspirante.\" % velocidade\nelse:\n\tprint \"Velocidade: %.1fkm/h. Corredor profissional.\" % velocidade\n",
+      "name": "corredor.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 10,\n      \"vhalstead\": 41.51,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "17de9ae2d67a3611ff924d0a7c92c37f",
+  "iid": 6733839560867840,
+  "activity_revision": "1.0.6"
+}

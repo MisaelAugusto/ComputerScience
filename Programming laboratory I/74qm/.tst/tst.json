@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nquantos_comeram = getattr(undertest, 'quantos_comeram', None)\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        assert quantos_comeram(10, [10, 10]) == 10\n        assert quantos_comeram(12, [10, 10]) == 10\n        assert quantos_comeram(2, [10, 10]) == 0\n        assert quantos_comeram(5, [2, 3, 5]) == 5\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "comeram.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Quantos Comeram ?\n\ndef quantos_comeram(N, fila):\n\tconsumidas = 0\n\tfor i in range(len(fila)):\n\t\tif consumidas + fila[i] > N:\n\t\t\tbreak\n\t\telse:\n\t\t\tconsumidas += fila[i]\n\t\t\t\n\treturn consumidas\n\t\t\t\n\t\t\n",
+      "name": "comeram.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5b2506dca75abdf44568728cd1b8e362",
+  "iid": 5874297218269184,
+  "activity_revision": "1.0.1"
+}

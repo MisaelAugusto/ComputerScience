@@ -1,0 +1,18 @@
+{
+  "files": {
+    "seleciona.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Seleciona os n\u00famero \u00edmpares positivos\n\nn = int(raw_input())\n\nfor i in range(n):\n\tif i % 2 > 0:\n\t\tprint i\n",
+      "name": "seleciona.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 3,\n      \"vhalstead\": 0.0,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8edeea48687212441898f96fb097a209",
+  "iid": 5130203462369280,
+  "activity_revision": "1.1.2"
+}

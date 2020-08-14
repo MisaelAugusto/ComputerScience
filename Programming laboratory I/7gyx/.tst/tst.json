@@ -1,0 +1,14 @@
+{
+  "files": {
+    "um_passo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Um Passo do Algoritmo BubbleSort\n\nwhile True:\n\tnumeros = raw_input().split()\n\tif numeros[0] == \"fim\":\n\t\tbreak\n\telse:\n\t\tnumero = \"\"\n\t\tfor i in range(len(numeros) - 1):\n\t\t\tif int(numeros[i]) > int(numeros[i + 1]):\n\t\t\t\tnumeros[i], numeros[i + 1] = numeros[i + 1], numeros[i]\n\t\t\tnumero += numeros[i] + \" \"\n\t\tnumero += numeros[-1]\n\t\tprint numero\n",
+      "name": "um_passo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3b738e23d56e8a82a4cdeb918655684c",
+  "iid": 5614935216226304,
+  "activity_revision": "1.0.0"
+}

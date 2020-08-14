@@ -1,0 +1,18 @@
+{
+  "files": {
+    "grep.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Grep\n\npalavra_chave = raw_input()\nN = int(raw_input())\n\nfor i in range(N):\n\tfrase = raw_input()\n\tfor j in range(len(frase) - 2):\n\t\tpalavra = frase[j] + frase[j + 1] + frase[j + 2]\n\t\tif palavra == palavra_chave:\n\t\t\tprint frase\n\t\t\tbreak\n",
+      "name": "grep.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 4.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d4c98c4cd565cd452af8c42d09234d77",
+  "iid": 5849519082176512,
+  "activity_revision": "2.0.1"
+}

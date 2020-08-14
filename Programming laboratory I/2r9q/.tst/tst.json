@@ -1,0 +1,18 @@
+{
+  "files": {
+    "jasei.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: J\u00e1 sei tocar essa m\u00fasica\n\ndef sei_tocar_musica(musica, acordes):\n\tn = 0\n\tfor i in range(len(musica)):\n\t\tfor j in range(len(acordes)):\n\t\t\tif musica[i] == acordes[j]:\n\t\t\t\tn += 1\n\t\t\t\tbreak\n\t\n\tif n == len(musica):\n\t\treturn True\n\telse:\n\t\treturn False\n",
+      "name": "jasei.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsei_tocar_musica = getattr(undertest, 'sei_tocar_musica', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_example(self):\n        musica = [\"a\", \"d\", \"dm\"]\n        acordes = [\"a\", \"d\"]\n        assert not sei_tocar_musica(musica, acordes)\n\n    def test_exemplo2(self):\n        musica = [\"a\", \"d\"]\n        acordes = [\"a\", \"bm\", \"d\", \"c\"]\n        assert sei_tocar_musica(musica, acordes)\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "26b30e9225efb6fcfb2f326fa580c27f",
+  "iid": 5018915021258752,
+  "activity_revision": "1.0.1"
+}

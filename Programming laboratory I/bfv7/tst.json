@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "12.1\n10.1\n12\n",
+      "output": "10 casa(s) pode(m) ser construída(s) no terreno.\n"
+    }
+  ]
+}

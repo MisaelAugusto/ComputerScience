@@ -1,0 +1,18 @@
+{
+  "files": {
+    "classifica.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Classifica Letra como Vogal ou Consoante\n\npalavra = raw_input()\nvogais = [\"a\", \"e\", \"i\", \"o\", \"u\", \"A\", \"E\", \"I\", \"O\", \"U\"]\n\nfor letra in palavra:\n\tif letra in vogais:\n\t\tprint \"<%s> sim\" % letra\n\telse:\n\t\tprint \"<%s> nao\" % letra\n",
+      "name": "classifica.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 25.27,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "44fe6226d6a4499b7c492d7aeb29ed8d",
+  "iid": 6645186469822464,
+  "activity_revision": "1.0.2"
+}

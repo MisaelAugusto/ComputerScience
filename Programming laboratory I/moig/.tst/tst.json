@@ -1,0 +1,14 @@
+{
+  "files": {
+    "polinomios.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: Aplica\u00e7\u00e3o de Polin\u00f4mios\n\npolinomios = []\nresultados = []\nwhile True:\n\tentrada = raw_input().split()\n\tif entrada[0] == \"fim\":\n\t\tbreak\n\telse:\n\t\tif entrada[0] == \"p:\":\n\t\t\tentrada.pop(0)\n\t\t\tpolinomios.append(entrada)\n\t\t\tresultados.append(\"novo polinomio\")\n\t\telse:\n\t\t\tresultado = 0\n\t\t\tfor i in range(len(polinomios[-1])):\n\t\t\t\tresultado +=  int(polinomios[-1][i]) * int(entrada[0]) ** i\n\t\t\tresultados.append(resultado)\n\t\t\t\t\nfor resultado in resultados:\n\tprint resultado\t\t\t\n\t\n",
+      "name": "polinomios.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "036bebfe84cc4d60f3631a5189e4b6cb",
+  "iid": 6378189894975488,
+  "activity_revision": "1.0.1"
+}

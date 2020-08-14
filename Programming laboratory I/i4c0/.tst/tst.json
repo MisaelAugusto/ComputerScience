@@ -1,0 +1,18 @@
+{
+  "files": {
+    "serie_float.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Misael Augusto\n# Matr\u00edcula: 117110525\n# Problema: S\u00e9rie: Uma nova s\u00e9rie com floats\n\nfor i in range(4, 104):\n\tprint i * 1.0\n\tprint i + 0.5\n",
+      "name": "serie_float.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 4,\n      \"vhalstead\": 4.75,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5285f497264a573ca70df08e39e8834c",
+  "iid": 6438226088689664,
+  "activity_revision": "1.1.1"
+}
