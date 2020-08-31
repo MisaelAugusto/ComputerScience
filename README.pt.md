@@ -5,7 +5,8 @@
 <div align="center">
   <a href="#description">Descrição</a> |
   <a href="#preview">Demonstração</a> |
-  <a href="#technologies">Tecnologias</a>
+  <a href="#technologies">Tecnologias</a> |
+  <a href="#license">Licença</a>
 </div>
 
 <h2 id="description">📑️ Descrição</h2>
@@ -15,13 +16,13 @@
 
 <h2 id="preview">📽️ Demonstração</h2>
 <ul>
-  <li>🗂️ ComputerScience (<strong>Ciência da Computação</strong>)</li>
+  <li>🗂️ Ciência da Computação</li>
   <ul>
-    <li>📁️ Database I (<strong>Banco de Dados I</strong>)</li>
-    <li>📁️ Data structure and algorithms laboratory (<strong>Laboratório de Estrutura de Dados e Algoritmos</strong>)</li>
-    <li>📁️ Functional Programming (<strong>Programação Funcional</strong>)</li>
-    <li>📁️ Programming laboratory I (<strong>Laboratório de Programação I</strong>)</li>
-    <li>📁️ Programming laboratory II (<strong>Laboratório de Programação II</strong>)</li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/database-I">Banco de Dados I</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/data-structure-and-algorithms-laboratory">Laboratório de Estrutura de Dados e Algoritmos</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/functional-programming">Programação Funcional</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/programming-laboratory-I">Laboratório de Programação I</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/programming-laboratory-II">Laboratório de Programação II</a></li>
   </ul>
 </ul>
 
@@ -32,6 +33,11 @@
   <li>SQL</li>
   <li>Haskell</li>
 </ul>
+
+<h2 id="license">📜️ Licença</h2>
+<div>
+  Esse projeto está sob a licença MIT. Veja o arquivo <a href="LICENSE">LICENSE</a> para mais detalhes.
+</div>
 
 ---
 <p>Desenvolvido com 💙️ por Misael Augusto</p>

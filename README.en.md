@@ -5,7 +5,8 @@
 <div align="center">
   <a href="#description">Description</a> |
   <a href="#preview">Preview</a> |
-  <a href="#technologies">Technologies</a>
+  <a href="#technologies">Technologies</a> |
+  <a href="#license">License</a>
 </div>
 
 <h2 id="description">📑️ Description</h2>
@@ -17,11 +18,11 @@
 <ul>
   <li>🗂️ ComputerScience</li>
   <ul>
-    <li>📁️ Database I</li>
-    <li>📁️ Data structure and algorithms laboratory</li>
-    <li>📁️ Functional Programming</li>
-    <li>📁️ Programming laboratory I</li>
-    <li>📁️ Programming laboratory II</li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/database-I">Database I</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/data-structure-and-algorithms-laboratory">Data structure and algorithms laboratory</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/functional-programming">Functional Programming</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/programming-laboratory-I">Programming laboratory I</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/programming-laboratory-II">Programming laboratory II</a></li>
   </ul>
 </ul>
 
@@ -32,6 +33,11 @@
   <li>SQL</li>
   <li>Haskell</li>
 </ul>
+
+<h2 id="license">📜️ License</h2>
+<div>
+  This project is under license from MIT. See the <a href="LICENSE">LICENSE</a> file for more details.
+</div>
 
 ---
 <p>Developed with 💙️ by Misael Augusto</p>
