@@ -18,11 +18,11 @@
 <ul>
   <li>🗂️ Ciência da Computação</li>
   <ul>
-    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/database-I">Banco de Dados I</a></li>
-    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/data-structure-and-algorithms-laboratory">Laboratório de Estrutura de Dados e Algoritmos</a></li>
-    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/functional-programming">Programação Funcional</a></li>
-    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/programming-laboratory-I">Laboratório de Programação I</a></li>
-    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/programming-laboratory-II">Laboratório de Programação II</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/tree/master/database-I">Banco de Dados I</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/tree/master/data-structure-and-algorithms-laboratory">Laboratório de Estrutura de Dados e Algoritmos</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/tree/master/functional-programming">Programação Funcional</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/tree/master/programming-laboratory-I">Laboratório de Programação I</a></li>
+    <li>📁️ <a href="https://github.com/MisaelAugusto/computer-science/tree/master/programming-laboratory-II">Laboratório de Programação II</a></li>
   </ul>
 </ul>
 
